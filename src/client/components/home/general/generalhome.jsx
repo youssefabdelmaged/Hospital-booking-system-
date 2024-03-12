@@ -15,6 +15,8 @@ import Faq from "./faq";
 import Header from "../../header";
 import Footer from "../../footer";
 import ProgressCircle from "../paediatric/scrolltotop";
+import Clinicsection from "../../../components/home/homefourcomponets/clinicsection";
+
 
 function Generalhome(props) {
   let pathname = props.location.pathname;
@@ -34,7 +36,9 @@ function Generalhome(props) {
           <Homebanner />
           {/* /Home Banner */}
           {/* Specialities Section */}
-          <Speacialities />
+          {/* <Speacialities /> */}
+          <Clinicsection />
+
           {/* /Specialities Section */}
           {/* Doctors Section */}
           <Doctor />
