@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+// generalhome1
 import React from "react";
 import Priceingplan from "./priceingplan";
 import Homebanner from "./homebanner";

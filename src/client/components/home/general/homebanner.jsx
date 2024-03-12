@@ -1,3 +1,5 @@
+// banner home1 component
+
 import React, { useState } from "react";
 import {
   banner_img1,
