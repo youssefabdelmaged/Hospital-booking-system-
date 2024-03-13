@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+// Routes
 import React, { useEffect } from "react";
 import config from "config";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";

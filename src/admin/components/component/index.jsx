@@ -299,7 +299,7 @@ const Components = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
                       <li className="breadcrumb-item">
-                        <Link to="#">Home</Link>
+                        <Link to="/index">Home</Link>
                       </li>
                       <li
                         className="breadcrumb-item active"
@@ -312,7 +312,7 @@ const Components = () => {
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb mb-0">
                       <li className="breadcrumb-item">
-                        <Link to="#">Home</Link>
+                        <Link to="/index">Home</Link>
                       </li>
                       <li className="breadcrumb-item">
                         <Link to="#">Products</Link>

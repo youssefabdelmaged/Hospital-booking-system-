@@ -1300,60 +1300,15 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      to="#"
-                      className={isSideMenu == "blog" ? "subdrop" : ""}
+                            to="/blog/blog-grid"
+                            className={isSideMenu == "blog" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")
                       }
                     >
-                      Blog <i className="fas fa-chevron-down" />
+                      Blog 
                     </Link>
-                    {isSideMenu == "blog" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "blog" ? "submenu d-block" : "submenu"
-                        }`}
-                      >
-                        <li
-                          className={
-                            pathnames.includes("blog-list") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-list"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog List
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("blog-grid") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-grid"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog Grid
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("blog-details") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/blog/blog-details"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Blog Details
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
+                   
                   </li>
                   <li className="has-submenu">
                     <Link
