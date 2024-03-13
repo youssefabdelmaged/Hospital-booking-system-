@@ -63,12 +63,8 @@ const Blogsection = () => {
             <div className="col-lg-12">
               <div className="section-header-fourteen service-inner-fourteen">
                 <div className="service-inner-fourteen">
-                  <div className="service-inner-fourteen-two">
-                    <h3>BLOG</h3>
-                  </div>
                 </div>
-                <h2>Our Blogs</h2>
-                <p>Our Recent Articles</p>
+                <h2>Our Recent Articles</h2>
               </div>
             </div>
           </div>
@@ -101,7 +97,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      What You Might Not Know About The Best Dog Food in India
+                      The Best Dog Food in India
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -264,7 +260,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      What You Might Not Know About The Best Dog Food in India
+                      The Best Dog Food
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -307,7 +303,7 @@ const Blogsection = () => {
             data-aos="fade-up"
           >
             <Link
-              to="/patient/search-doctor1"
+              to="#"
               className="btn btn-primary btn-view"
             >
               Read More Articles

@@ -201,7 +201,7 @@ const Header = () => {
                     <span></span>
                   </span>
                 </Link>
-                <Link to="/index-2" className="navbar-brand logo">
+                <Link to="/index" className="navbar-brand logo">
                   {pathnames.includes("/index-5") ? (
                     <img src={logo_white} className="img-fluid" alt="Logo" />
                   ) : pathnames.includes(
@@ -288,11 +288,11 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      to="#"
+                      to="/index"
                       onClick={() => setMenu(!menu)}
                       className={`${menu === true ? "submenu " : ""}`}
                     >
-                      Home <i className="fas fa-chevron-down" />
+                      Home 
                     </Link>
                     <ul
                       className={`${
@@ -301,380 +301,7 @@ const Header = () => {
                           : "submenu mega-submenu"
                       }`}
                     >
-                      <li>
-                        <div className="megamenu-wrapper">
-                          <div className="row">
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link to="/index" className="inner-demo-img">
-                                    <img
-                                      src={home_11}
-                                      className="img-fluid "
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link to="/index" className="inner-demo-img">
-                                    General Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-2") ? "" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-2"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_10}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-2"
-                                    className="inner-demo-img"
-                                  >
-                                    General Home 2
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-3") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-3"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_09}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-3"
-                                    className="inner-demo-img"
-                                  >
-                                    General Home 3
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-4") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-4"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_08}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-4"
-                                    className="inner-demo-img"
-                                  >
-                                    General Home 4
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-5") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-5"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_07}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-5"
-                                    className="inner-demo-img"
-                                  >
-                                    Cardiology Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-6") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-6"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_06}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-6"
-                                    className="inner-demo-img"
-                                  >
-                                    Eye Care Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-7") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-7"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_05}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-7"
-                                    className="inner-demo-img"
-                                  >
-                                    Veterinary Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-8") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-8"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_04}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-8"
-                                    className="inner-demo-img"
-                                  >
-                                    Paediatric Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-9") ? "active" : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-9"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_03}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-9"
-                                    className="inner-demo-img"
-                                  >
-                                    Fertility Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-10")
-                                    ? "active"
-                                    : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-10"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_02}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-10"
-                                    className="inner-demo-img"
-                                  >
-                                    ENT Hospital Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-11")
-                                    ? "active"
-                                    : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-11"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={home_01}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-11"
-                                    className="inner-demo-img"
-                                  >
-                                    Cosmetics Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-12")
-                                    ? "active"
-                                    : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-12"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={Home_12}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-12"
-                                    className="inner-demo-img"
-                                  >
-                                    Lab Test Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div className="col-lg-2">
-                              <div
-                                className={`single-demo ${
-                                  pathnames.includes("/index-13")
-                                    ? "active"
-                                    : ""
-                                }`}
-                              >
-                                <div className="demo-img">
-                                  <Link
-                                    to="/index-13"
-                                    className="inner-demo-img"
-                                  >
-                                    <img
-                                      src={Home_13}
-                                      className="img-fluid"
-                                      alt="img"
-                                    />
-                                  </Link>
-                                </div>
-                                <div className="demo-info">
-                                  <Link
-                                    to="/index-13"
-                                    className="inner-demo-img"
-                                  >
-                                    Homecare Home
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
+                      
                     </ul>
                   </li>
 
@@ -1196,120 +823,7 @@ const Header = () => {
                       ""
                     )}
                   </li>
-                  <li
-                    className={`has-submenu ${
-                      url.includes("/Pharmacy") ? "active" : ""
-                    }`}
-                  >
-                    <Link
-                      to="#"
-                      className={isSideMenu == "pharmacy" ? "subdrop" : ""}
-                      onClick={() =>
-                        toggleSidebar(
-                          isSideMenu == "pharmacy" ? "submenu" : "pharmacy"
-                        )
-                      }
-                    >
-                      Pharmacy <i className="fas fa-chevron-down" />
-                    </Link>
-                    {isSideMenu == "pharmacy" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "pharmacy"
-                            ? "submenu d-block"
-                            : "submenu"
-                        }`}
-                      >
-                        <li
-                          className={
-                            pathnames.includes("Pharmacy-index") ? "active" : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/Pharmacy-index">Pharmacy</Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("Pharmacy-details")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/Pharmacy-details">
-                            Pharmacy Details
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("pharmacy-search")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/pharmacy-search">
-                            Pharmacy Search
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("product-all") ? "active" : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/product-all">Product</Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("product-description")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/product-description">
-                            Product Description
-                          </Link>
-                        </li>
-                        <li
-                          className={pathnames.includes("cart") ? "active" : ""}
-                        >
-                          <Link to="/Pharmacy/cart">Cart</Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("product-checkout")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/product-checkout">
-                            Product Checkout
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("payment-success")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/payment-success">
-                            Payment Success
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("pharmacy-register")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link to="/Pharmacy/pharmacy-register">
-                            Pharmacy Register
-                          </Link>
-                        </li>
-                      </ul>
-                    ) : (
-                      ""
-                    )}
-                  </li>
+
                   <li
                     className={`has-submenu ${
                       url.includes("/pages") ? "active" : ""
@@ -1843,8 +1357,7 @@ const Header = () => {
                   </li>
                   <li className="has-submenu">
                     <Link
-                      to="#"
-                      // target="_blank"
+                      to="/admin" target="_blank"
                       className={isSideMenu == "admin" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
@@ -1853,7 +1366,6 @@ const Header = () => {
                       }
                     >
                       Admin
-                      <i className="fas fa-chevron-down" />
                     </Link>
                     {isSideMenu == "admin" ? (
                       <ul
@@ -1861,17 +1373,7 @@ const Header = () => {
                           isSideMenu == "admin" ? "submenu d-block" : "submenu"
                         }`}
                       >
-                        <li>
-                          <Link to="/admin" target="_blank">
-                            Admin
-                          </Link>
-                        </li>
 
-                        <li>
-                          <Link to="/pharmacyadmin" target="_blank">
-                            Pharmacy Admin
-                          </Link>
-                        </li>
                       </ul>
                     ) : (
                       ""

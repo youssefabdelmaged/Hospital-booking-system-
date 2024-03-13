@@ -94,7 +94,7 @@ const TopHeader = (props) => {
                     <span></span>
                   </span>
                 </Link>
-                <Link to="/index-2" className="navbar-brand logo">
+                <Link to="/index" className="navbar-brand logo">
                   <img src={logo} className="img-fluid" alt="Logo" />
                 </Link>
               </div>
@@ -165,7 +165,7 @@ const TopHeader = (props) => {
                               : ""
                           }
                         >
-                          <Link to="/index-2">Home</Link>
+                          <Link to="/index">Home</Link>
                         </li>
                         <li
                           className={

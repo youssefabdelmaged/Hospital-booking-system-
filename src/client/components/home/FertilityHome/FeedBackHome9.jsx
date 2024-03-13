@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { client_02, client_03, feedback_six } from "../../imagepath";
+import { client_02, client_03, client_04, feedback_six } from "../../imagepath";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -143,7 +143,7 @@ function FeedBackHome9() {
                                                 <div className="feedback-inner-img">
                                                     <h6>May 09, 2023</h6>
                                                     <img
-                                                        src={client_03}
+                                                        src={client_04}
                                                         alt="image"
                                                         className="img-fluid"
                                                     />

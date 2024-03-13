@@ -17,7 +17,7 @@ function Doctersection() {
             manage appointments and contacts coming from the site, in a simple
             and fast way.
           </p>
-          <Link to="/patient/doctor-profile" className="doc-bok-btn">
+          <Link to="#" className="doc-bok-btn">
             Book Now
           </Link>
         </div>
@@ -28,7 +28,7 @@ function Doctersection() {
             manage appointments and contacts coming from the site, in a simple
             and fast way.
           </p>
-          <Link to="/patient/booking1" className="doc-bok-btn">
+          <Link to="#" className="doc-bok-btn">
             Book Now
           </Link>
         </div>

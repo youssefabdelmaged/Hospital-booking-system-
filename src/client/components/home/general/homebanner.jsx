@@ -5,7 +5,6 @@ import {
   banner_img1,
   banner_img2,
   banner_img3,
-  down_arrow_img,
   generalbanner_img,
   header_icon,
 } from "../../imagepath";
@@ -42,9 +41,6 @@ function Homebanner() {
                   <Link to="/patient/booking1" className="btn">
                     Start a Consult
                   </Link>
-                  <div className="banner-arrow-img">
-                    <img src={down_arrow_img} className="img-fluid" alt="" />
-                  </div>
                 </div>
                 <div className="search-box-one aos" data-aos="fade-up">
                   <form action={`${config}/patient/search-doctor1`}>

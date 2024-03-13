@@ -79,12 +79,12 @@ const Stepstofollow = () => {
                   </p>
                   <div className="content-btn-block d-flex">
                     <Link
-                      to="/patient/booking1"
+                      to="#"
                       className=" need-to-know-content-btn book-btn me-2">
                       Book Appointment
                     </Link>
                     <Link
-                      to="/pages/pricing-plan"
+                      to="#"
                       className=" need-to-know-content-btn">
                       Click Our Plan
                     </Link>

@@ -151,7 +151,7 @@ function Clinicsection() {
         </div>
         </div>
         <div className="view-all-more text-center aos" data-aos="fade-up">	
-        <Link to="/patient/doctor-profile" className="btn btn-primary">View More</Link>
+        <Link to="#" className="btn btn-primary">View More</Link>
         </div>
     </div>
     </section>

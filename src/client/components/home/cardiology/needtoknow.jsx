@@ -107,7 +107,7 @@ const Needtoknow = () => {
                         and blood is allowed to leak backwards)....
                       </p>
                       <Link
-                        to="/patient/booking1"
+                        to="#"
                         className=" need-to-know-content-btn">
                         Read More
                       </Link>
@@ -129,7 +129,7 @@ const Needtoknow = () => {
                         and blood is allowed to leak backwards)....
                       </p>
                       <Link
-                        to="/patient/booking1"
+                        to="#"
                         className=" need-to-know-content-btn">
                         Read More
                       </Link>

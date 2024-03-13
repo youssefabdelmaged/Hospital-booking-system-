@@ -51,7 +51,7 @@ export { default as header_icon } from "../assets/images/icons/header-icon.svg";
 export { default as down_arrow_img } from "../assets/images/down-arrow-img.png";
 export { default as banner_img } from "../assets/images/banner-img.png";
 export { default as home5banner_img } from "../assets/images/bg/home-10-banner-img.png";
-export { default as generalbanner_img } from "../assets/images/banner-img.png";
+export { default as generalbanner_img } from "../assets/images/banner-fifteen-ryt.png";
 export { default as banner_img1 } from "../assets/images/banner-img1.png";
 export { default as banner_img2 } from "../assets/images/banner-img2.png";
 export { default as banner_img3 } from "../assets/images/banner-img3.png";
