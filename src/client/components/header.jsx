@@ -292,7 +292,7 @@ const Header = () => {
                       onClick={() => setMenu(!menu)}
                       className={`${menu === true ? "submenu " : ""}`}
                     >
-                      Home 
+                      Home
                     </Link>
                     <ul
                       className={`${
@@ -300,9 +300,7 @@ const Header = () => {
                           ? "submenu mega-submenu d-block"
                           : "submenu mega-submenu"
                       }`}
-                    >
-                      
-                    </ul>
+                    ></ul>
                   </li>
 
                   <li
@@ -871,73 +869,16 @@ const Header = () => {
                           </Link>
                         </li>
 
-                        <li
-                          className={`has-submenu ${
-                            pathnames.includes("/call") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="#0"
-                            className={
-                              isSideMenuthree == "call" ? "subdrop" : ""
-                            }
-                            onClick={() =>
-                              toggleSidebarthree(
-                                isSideMenuthree == "call" ? "" : "call"
-                              )
-                            }
-                          >
-                            Call{" "}
-                          </Link>
-                          {isSideMenuthree == "call" ? (
-                            <ul
-                              className={
-                                isSideMenuthree == "call"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("voice-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/voice-call"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Voice Call
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("video-call")
-                                    ? "active"
-                                    : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/video-call"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Video Call
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
-                        </li>
+                      
+                           
 
                         <li
-                          className={`has-submenu ${
+                          className={` ${
                             pathnames.includes("/invoice-view") ? "active" : ""
                           }`}
                         >
                           <Link
-                            to="#0"
+                           to="/pages/invoice"
                             className={
                               isSideMenuone == "invoices" ? "subdrop" : ""
                             }
@@ -949,42 +890,7 @@ const Header = () => {
                           >
                             Invoices{" "}
                           </Link>
-                          {isSideMenuone == "invoices" ? (
-                            <ul
-                              className={
-                                isSideMenuone == "invoices"
-                                  ? "submenu d-block"
-                                  : "submenu"
-                              }
-                            >
-                              <li
-                                className={
-                                  pathnames.includes("invoice") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/invoice"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Invoices
-                                </Link>
-                              </li>
-                              <li
-                                className={
-                                  pathnames.includes("-view") ? "active" : ""
-                                }
-                              >
-                                <Link
-                                  to="/pages/invoice-view"
-                                  onClick={() => onhandleCloseMenu()}
-                                >
-                                  Invoice View
-                                </Link>
-                              </li>
-                            </ul>
-                          ) : (
-                            ""
-                          )}
+                          
                         </li>
 
                         <li
@@ -1137,7 +1043,8 @@ const Header = () => {
                           )}
                         </li>
 
-                        <li
+                        {/* Error page */}
+                        {/* <li
                           className={`has-submenu ${
                             pathnames.includes("/error") ? "active" : ""
                           }`}
@@ -1160,8 +1067,8 @@ const Header = () => {
                                   ? "submenu d-block"
                                   : "submenu"
                               }
-                            >
-                              <li
+                            > */}
+                        {/* <li
                                 className={
                                   pathnames.includes("invoice") ? "active" : ""
                                 }
@@ -1172,8 +1079,8 @@ const Header = () => {
                                 >
                                   Error 404
                                 </Link>
-                              </li>
-                              <li
+                              </li> */}
+                        {/* <li
                                 className={
                                   pathnames.includes("-view") ? "active" : ""
                                 }
@@ -1184,99 +1091,16 @@ const Header = () => {
                                 >
                                   Error 500
                                 </Link>
-                              </li>
-                            </ul>
+                              </li> */}
+                        {/* </ul>
                           ) : (
                             ""
                           )}
-                        </li>
+                        </li> */}
 
-                        <li
-                          className={`${
-                            pathnames.includes("/blank-page") ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/blank-page"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Starter Page
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/aboutus") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/pricing-plan"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Pricing Plan
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/contactus") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/faq"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            FAQ
-                          </Link>
-                        </li>
-
-                        <li
-                          className={
-                            pathnames.includes("login") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/maintenance"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Maintenance
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("login") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/comingsoon"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Coming Soon
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("/register") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/pages/terms"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Terms & Condition
-                          </Link>
-                        </li>
-                        <li
-                          className={`${
-                            pathnames === "/forgot-password" ? "active" : ""
-                          }`}
-                        >
-                          <Link
-                            to="/pages/privacy-policy"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Privacy Policy
-                          </Link>
-                        </li>
-                        <li
+                      
+                        {/* component Page */}
+                        {/* <li
                           className={`${
                             pathnames.includes("/component") ? "active" : ""
                           }`}
@@ -1287,7 +1111,7 @@ const Header = () => {
                           >
                             Components
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     ) : (
                       ""
@@ -1300,19 +1124,19 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                            to="/blog/blog-grid"
-                            className={isSideMenu == "blog" ? "subdrop" : ""}
+                      to="/blog/blog-grid"
+                      className={isSideMenu == "blog" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")
                       }
                     >
-                      Blog 
+                      Blog
                     </Link>
-                   
                   </li>
                   <li className="has-submenu">
                     <Link
-                      to="/admin" target="_blank"
+                      to="/admin"
+                      target="_blank"
                       className={isSideMenu == "admin" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
@@ -1327,9 +1151,7 @@ const Header = () => {
                         className={`${
                           isSideMenu == "admin" ? "submenu d-block" : "submenu"
                         }`}
-                      >
-
-                      </ul>
+                      ></ul>
                     ) : (
                       ""
                     )}
