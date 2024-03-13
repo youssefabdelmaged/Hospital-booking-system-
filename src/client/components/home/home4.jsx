@@ -67,6 +67,7 @@ import Homebanner from "./homefourcomponets/homebanner";
 import Categoryselect from "./homefourcomponets/categoryselect";
 import Browser from "./homefourcomponets/browser";
 import ProgressCircle from "./paediatric/scrolltotop";
+import Stepstofollow from "./cardiology/stepstofollow";
 
 const Home4 = (props) => {
   //Aos
@@ -157,6 +158,8 @@ const Home4 = (props) => {
       {/* /Book Doctors*/}
       {/* Blogs */}
       <Blog />
+      <Stepstofollow />
+
       {/* /Blogs */}
       {/* Footer */}
       <footer className="footer">

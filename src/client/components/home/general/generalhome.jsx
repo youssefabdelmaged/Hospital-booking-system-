@@ -2,6 +2,9 @@
 /* eslint-disable react/prop-types */
 // generalhome1
 import React from "react";
+
+import "./generalhome.css";
+
 import Priceingplan from "./priceingplan";
 import Homebanner from "./homebanner";
 import Speacialities from "./speacialities";
@@ -13,11 +16,16 @@ import Appsection from "./appsection";
 import Doctor from "./doctor";
 import Faq from "./faq";
 import Header from "../../header";
-import Footer from "../../footer";
+// import Footer from "../../footer";
+import Footer from '../cardiology/footer'
 import ProgressCircle from "../paediatric/scrolltotop";
 import Clinicsection from "../../../components/home/homefourcomponets/clinicsection";
 
-
+import Doctersection from "../homefourcomponets/doctersection";
+import Bookdoctor from "../homefourcomponets/bookdoctor";
+import Stepstofollow from "../../home/cardiology/stepstofollow";
+import Blogsection from "../browsebySpecialities/Home7/blogsection";
+import FeedBackHome9 from "../FertilityHome/FeedBackHome9";
 function Generalhome(props) {
   let pathname = props.location.pathname;
 
@@ -30,7 +38,7 @@ function Generalhome(props) {
   return (
     <>
       <>
-        <div className="main-wrapper">
+        <div className="main-wrapper ">
           <Header {...props} />
           {/* Home Banner */}
           <Homebanner />
@@ -38,33 +46,42 @@ function Generalhome(props) {
           {/* Specialities Section */}
           {/* <Speacialities /> */}
           <Clinicsection />
-
           {/* /Specialities Section */}
           {/* Doctors Section */}
-          <Doctor />
+          {/* <Doctor /> */}
+          <Doctersection />
+          <Bookdoctor />
           {/* /Doctors Section */}
           {/* Pricing */}
           <Priceingplan />
           {/* /Pricing */}
           {/* Work Section */}
-          <Worksection />
+          {/* <Worksection /> */}
           {/* /Work Section */}
           {/* Articles Section */}
-          <Artical />
+          {/* <Artical /> */}
+          <Blogsection />
+
           {/* /Articles Section */}
-          {/* App Section */}
-          <Appsection />
-          {/* /App Section */}
+          {/* steps to follow */}
+          <Stepstofollow />
           {/* FAQ Section */}
           <Faq />
           {/* /FAQ Section */}
+          {/* App Section */}
+          <Appsection />
+          {/* /App Section */}
           {/* Testimonial Section */}
-          <Testimonial />
+          {/* <Testimonial /> */}
+          <FeedBackHome9 />
+
           {/* /Testimonial Section */}
           {/* Partners Section */}
-          <Parentssection />
+          {/* <Parentssection /> */}
           {/* /Partners Section */}
-          <Footer {...props} />
+          {/* <Footer {...props} /> */}
+          <Footer />
+
           {/* Cursor */}
           <div className="mouse-cursor cursor-outer" />
           <div className="mouse-cursor cursor-inner" />

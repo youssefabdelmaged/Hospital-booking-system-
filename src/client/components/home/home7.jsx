@@ -49,6 +49,7 @@ const Home3 = (props) => {
   return (
     <div className="main-wrapper home-twelve">
       <Header {...props} />
+      
       {/* Home Banner */}
       {/* Home Banner */}
       <section className="banner-section-fourteen banner-section-twelve">
@@ -123,7 +124,11 @@ const Home3 = (props) => {
                     </div>
                   </div>
                   <div className="search-btn">
-                    <Link  to="/patient/booking1"className="btn btn-primary" type="submit">
+                    <Link
+                      to="/patient/booking1"
+                      className="btn btn-primary"
+                      type="submit"
+                    >
                       Book Now
                     </Link>
                   </div>

@@ -1,3 +1,5 @@
+// Clinc Section
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { spec, spec1, spec2, spec3, spec4, spec5, spec6, spec7 } from '../image';

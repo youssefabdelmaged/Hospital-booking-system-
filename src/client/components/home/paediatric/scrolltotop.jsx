@@ -29,7 +29,7 @@ const ProgressCircle = () => {
   };
 
   return (
-    <div className="progress-wrap active-progress" onClick={handleClick}>
+    <div className="progress-wrap active-progress mb-4" onClick={handleClick}>
       <svg
         className="progress-circle svg-content"
         width="100%"

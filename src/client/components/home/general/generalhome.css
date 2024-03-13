@@ -1,0 +1,162 @@
+.main-wrapper .need-to-know-section.steps-to-follow{
+margin: 3rem 0;}
+
+.main-wrapper .need-to-know-section.steps-to-follow .floating-bg img {
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  animation: beat 1.5s ease-in-out infinite;
+}
+@media (max-width: 991.98px) {
+  .main-wrapper .need-to-know-section.steps-to-follow .floating-bg {
+    display: none;
+  }
+}
+.main-wrapper .need-to-know-section.steps-to-follow .gallery-box-block {
+  display: flex;
+  gap: 24px;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail {
+  width: 240px;
+  height: 223px;
+  border-radius: 35px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 30px;
+  box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1399.98px) {
+  .main-wrapper
+    .need-to-know-section.steps-to-follow
+    .gallery-box-block
+    .box-detail {
+    max-width: 210px;
+    max-height: 203px;
+  }
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail
+  .steps-list-box {
+  position: relative;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail
+  .steps-list-box
+  .steps-list-img {
+  width: 140px;
+  height: 60px;
+  margin: auto;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail
+  .steps-list-box
+  h6 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail
+  .steps-list-box
+  p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .box-detail
+  .steps-list-box
+  span {
+  color: #0e82fd;
+  font-weight: 700;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 12%);
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .gallery-box-block
+  .gallery-box-left {
+  padding-top: 30px;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .section-header-one
+  .need-to-know-content {
+  margin-top: 50px;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .section-header-one
+  .need-to-know-content
+  .need-to-know-content-btn {
+  border-radius: 35px;
+  padding: 10px 30px;
+  border: 3px solid #0e82fd;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0e82fd;
+  box-shadow: inset 0 0 0 0 #0e82fd;
+  transition: all 0.7s;
+}
+@media (max-width: 991.98px) {
+  .main-wrapper
+    .need-to-know-section.steps-to-follow
+    .section-header-one
+    .need-to-know-content
+    .need-to-know-content-btn {
+    font-size: 16px;
+  }
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .section-header-one
+  .need-to-know-content
+  .need-to-know-content-btn:hover {
+  box-shadow: inset 0 0 0 50px #0e82fd;
+  color: #ffffff;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .section-header-one
+  .need-to-know-content
+  .need-to-know-content-btn.book-btn {
+  background-color: #0e82fd;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 0 #ffffff;
+}
+.main-wrapper
+  .need-to-know-section.steps-to-follow
+  .section-header-one
+  .need-to-know-content
+  .need-to-know-content-btn.book-btn:hover {
+  box-shadow: inset 0 0 0 50px #ffffff;
+  color: #0e82fd;
+}
