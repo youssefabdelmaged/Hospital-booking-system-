@@ -23,7 +23,6 @@ import Home10 from "./client/components/home/home10";
 import Home7 from "./client/components/home/home7";
 
 //blog
-import BlogList from "./client/components/blog/bloglist";
 import BlogGrid from "./client/components/blog/bloggrid";
 import BlogDetails from "./client/components/blog/blogdetails";
 //pages
@@ -307,7 +306,6 @@ const AppContainer = function (props) {
               <Route path="/home14" exact component={Home14} />
 
               {/* blog */}
-              <Route path="/blog/blog-list" exact component={BlogList} />
               <Route path="/blog/blog-grid" exact component={BlogGrid} />
               <Route path="/blog/blog-details" exact component={BlogDetails} />
               <Route path="/doctor-blog" exact component={Doctorblog} />

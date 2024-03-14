@@ -458,7 +458,7 @@ const Header = () => {
                           </Link>
                         </li>
                         <li
-                          className={`has-submenu ${
+                          className={` ${
                             pathnames.includes("doctor-blog") ? "active" : ""
                           }`}
                         >
@@ -468,32 +468,6 @@ const Header = () => {
                           >
                             Blog
                           </Link>
-                          <ul className="submenu">
-                            <li>
-                              <Link
-                                to="/doctor-blog"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Blog
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                to="/blog/blog-details"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Blog view
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                to="/blog/doctor-add-blog"
-                                onClick={() => onhandleCloseMenu()}
-                              >
-                                Add Blog
-                              </Link>
-                            </li>
-                          </ul>
                         </li>
                       </ul>
                     ) : (
@@ -869,16 +843,13 @@ const Header = () => {
                           </Link>
                         </li>
 
-                      
-                           
-
                         <li
                           className={` ${
                             pathnames.includes("/invoice-view") ? "active" : ""
                           }`}
                         >
                           <Link
-                           to="/pages/invoice"
+                            to="/pages/invoice"
                             className={
                               isSideMenuone == "invoices" ? "subdrop" : ""
                             }
@@ -890,7 +861,6 @@ const Header = () => {
                           >
                             Invoices{" "}
                           </Link>
-                          
                         </li>
 
                         <li
@@ -1098,7 +1068,6 @@ const Header = () => {
                           )}
                         </li> */}
 
-                      
                         {/* component Page */}
                         {/* <li
                           className={`${

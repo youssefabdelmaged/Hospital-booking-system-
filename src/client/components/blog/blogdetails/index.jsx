@@ -1,3 +1,5 @@
+// must Be dynamic
+
 import React from "react";
 import { Link } from "react-router-dom";
 import StickyBox from "react-sticky-box";

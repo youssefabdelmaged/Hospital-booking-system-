@@ -1,11 +1,11 @@
 import React from "react";
 import {
-  IMG_blog_th01,
-  IMG_blog_th02,
-  IMG_blog_th03,
-  IMG_blog_th04,
-  IMG_blog_th05,
-} from ".././bloglist/img.jsx";
+  IMG_th01,
+  IMG_th02,
+  IMG_th03,
+  IMG_th04,
+  IMG_th05,
+} from "../bloggrid/img";
 //link
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const LastestBlog = () => {
           <li>
             <div className="post-thumb">
               <Link to="/blog/blog-details">
-                <img className="img-fluid" src={IMG_blog_th01} alt="" />
+                <img className="img-fluid" src={IMG_th01} alt="" />
               </Link>
             </div>
             <div className="post-info">
@@ -35,7 +35,7 @@ const LastestBlog = () => {
           <li>
             <div className="post-thumb">
               <Link to="/blog/blog-details">
-                <img className="img-fluid" src={IMG_blog_th02} alt="" />
+                <img className="img-fluid" src={IMG_th02} alt="" />
               </Link>
             </div>
             <div className="post-info">
@@ -50,7 +50,7 @@ const LastestBlog = () => {
           <li>
             <div className="post-thumb">
               <Link to="/blog/blog-details">
-                <img className="img-fluid" src={IMG_blog_th03} alt="" />
+                <img className="img-fluid" src={IMG_th03} alt="" />
               </Link>
             </div>
             <div className="post-info">
@@ -65,7 +65,7 @@ const LastestBlog = () => {
           <li>
             <div className="post-thumb">
               <Link to="/blog/blog-details">
-                <img className="img-fluid" src={IMG_blog_th04} alt="" />
+                <img className="img-fluid" src={IMG_th04} alt="" />
               </Link>
             </div>
             <div className="post-info">
@@ -80,7 +80,7 @@ const LastestBlog = () => {
           <li>
             <div className="post-thumb">
               <Link to="/blog/blog-details">
-                <img className="img-fluid" src={IMG_blog_th05} alt="" />
+                <img className="img-fluid" src={IMG_th05} alt="" />
               </Link>
             </div>
             <div className="post-info">
