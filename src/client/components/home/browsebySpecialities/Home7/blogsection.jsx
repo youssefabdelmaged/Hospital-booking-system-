@@ -4,6 +4,7 @@ import {
   Veterinary_blog_01,
   Veterinary_blog_02,
   Veterinary_blog_03,
+  Veterinary_blog_04,
   doctor_04,
   doctor_06,
   doctor_07,
@@ -97,7 +98,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      The Best Dog Food in India
+                      Doccure – Making your clinic painless visit?
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -120,9 +121,9 @@ const Blogsection = () => {
                       </li>
                     </ul>
                     <ul className="articles-list nav blog-articles-list-two">
-                      <li>Dog</li>
+                      <li>Disease</li>
+                      <li>Appointment</li>
                       <li>Health</li>
-                      <li>Diet Foods</li>
                     </ul>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -152,7 +153,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      How to Care for Rabbits in the Winter
+                      What are the benefits of Online Doctor Booking?
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -175,8 +176,8 @@ const Blogsection = () => {
                       </li>
                     </ul>
                     <ul className="articles-list nav blog-articles-list-two">
-                      <li>Pet Care</li>
-                      <li>Rabbit</li>
+                      <li>Online</li>
+                      <li>Consulting</li>
                     </ul>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -206,7 +207,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      Why Cat Scratches?
+                      Benefits of consulting with an Online Doctor
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -229,8 +230,9 @@ const Blogsection = () => {
                       </li>
                     </ul>
                     <ul className="articles-list nav blog-articles-list-two">
-                      <li>Cat</li>
-                      <li>Cat Scratcher</li>
+                      <li>Appointment</li>
+                      <li>Online</li>
+                      <li>Consulting</li>
                     </ul>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -246,7 +248,7 @@ const Blogsection = () => {
                     <Link to="/blog/blog-details">
                       <div className="blog-inner-right-img">
                         <img
-                          src={Veterinary_blog_01}
+                          src={Veterinary_blog_04}
                           alt="image"
                           className="img-fluid "
                         />
@@ -260,7 +262,7 @@ const Blogsection = () => {
                       to="/blog/blog-details"
                       className="blog-inner-right-fourt-care"
                     >
-                      The Best Dog Food
+                      Online Doctor Appointment Scheduling
                     </Link>
                     <ul className="articles-list nav blog-articles-list">
                       <li>
@@ -284,8 +286,8 @@ const Blogsection = () => {
                     </ul>
                     <ul className="articles-list nav blog-articles-list-two">
                       <li>Dog</li>
-                      <li>Health</li>
-                      <li>Diet Foods</li>
+                      <li>Health Care</li>
+                      <li>Treatments</li>
                     </ul>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,

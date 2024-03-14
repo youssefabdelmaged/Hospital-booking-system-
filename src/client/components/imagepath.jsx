@@ -364,12 +364,12 @@ export { default as home_12_pricing_bg_3 } from "../assets/images/bg/home-12-pri
 {
   /*client Home-7 veterinary-home blogsection*/
 }
-export { default as Veterinary_blog_01 } from "../assets/images/blog/veterinary-blog-01.jpg";
-
-export { default as Veterinary_blog_02 } from "../assets/images/blog/veterinary-blog-02.jpg";
-export { default as doctor_07 } from "../assets/images/doctors/doctor-07.jpg";
-export { default as Veterinary_blog_03 } from "../assets/images/blog/veterinary-blog-03.jpg";
 export { default as doctor_06 } from "../assets/images/doctors/doctor-06.jpg";
+export { default as doctor_07 } from "../assets/images/doctors/doctor-07.jpg";
+export { default as Veterinary_blog_01 } from "../assets/images/blog/blog-01.jpg";
+export { default as Veterinary_blog_02 } from "../assets/images/blog/blog-02.jpg";
+export { default as Veterinary_blog_03 } from "../assets/images/blog/blog-03.jpg";
+export { default as Veterinary_blog_04 } from "../assets/images/blog/blog-04.jpg";
 {
   /*client Home-7 veterinary-home chooseus*/
 }
