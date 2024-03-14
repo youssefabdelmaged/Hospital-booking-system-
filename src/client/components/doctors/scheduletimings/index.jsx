@@ -31,7 +31,7 @@ const ScheduleTiming = (props) => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item" aria-current="page">
                     Schedule Timings
@@ -83,7 +83,7 @@ const ScheduleTiming = (props) => {
                                     <li className="nav-item">
                                       <Link
                                         className="nav-link"
-                                        // data-bs-toggle="tab"
+                                        data-bs-toggle="tab"
                                         to="#slot_sunday"
                                       >
                                         Sunday
