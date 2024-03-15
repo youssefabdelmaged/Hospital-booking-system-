@@ -16,7 +16,7 @@ const SocialMedia = (props) => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item" aria-current="page">
                     Social Media

@@ -16,6 +16,7 @@ import InvoiceSidebar from "../sidebar.jsx";
 import Footer from "../../../footer";
 import Header from "../../../header";
 import StickyBox from "react-sticky-box";
+import DoctorSidebar from "../../../doctors/sidebar/index.jsx";
 
 const Invoices = (props) => {
   return (
@@ -31,7 +32,7 @@ const Invoices = (props) => {
                 <nav aria-label="breadcrumb" className="page-breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link to="/index-2">Home</Link>
+                      <Link to="/index">Home</Link>
                     </li>
                     <li className="breadcrumb-item" aria-current="page">
                       Invoices
@@ -51,7 +52,7 @@ const Invoices = (props) => {
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
               {/* Profile Sidebar */}
-              <InvoiceSidebar />
+              <DoctorSidebar />
               {/* /Profile Sidebar */}
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">

@@ -6,6 +6,7 @@ import { IMG02, img_1, img_2, img_3 } from "./img.jsx";
 import Footer from "../../footer.jsx";
 import Header from "../../header.jsx";
 import StickyBox from "react-sticky-box";
+import DoctorSidebar from "../../doctors/sidebar/index.jsx";
 
 const Doctoraddblog = (props) => {
   return (
@@ -21,7 +22,7 @@ const Doctoraddblog = (props) => {
                 <nav aria-label="breadcrumb" className="page-breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link to="/index-2">Home</Link>
+                      <Link to="/index">Home</Link>
                     </li>
                     <li className="breadcrumb-item" aria-current="page">
                       Add Blog
@@ -41,96 +42,8 @@ const Doctoraddblog = (props) => {
               <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
                 <StickyBox>
                   {/* Profile Sidebar */}
-                  <div className="profile-sidebar">
-                    <div className="widget-profile pro-widget-content">
-                      <div className="profile-info-widget">
-                        <Link to="#" className="booking-doc-img">
-                          <img src={IMG02} alt="User Image" />
-                        </Link>
-                        <div className="profile-det-info">
-                          <h3>Dr. Darren Elder</h3>
-                          <div className="patient-details">
-                            <h5 className="mb-0">
-                              BDS, MDS - Oral &amp; Maxillofacial Surgery
-                            </h5>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="dashboard-widget">
-                      <nav className="dashboard-menu">
-                        <ul>
-                          <li>
-                            <Link to="/doctor/doctor-dashboard">
-                              <i className="fas fa-columns" />
-                              <span>Dashboard</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/appointments">
-                              <i className="fas fa-calendar-check" />
-                              <span>Appointments</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/my-patients">
-                              <i className="fas fa-user-injured" />
-                              <span>My Patients</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/schedule-timing">
-                              <i className="fas fa-hourglass-start" />
-                              <span>Schedule Timings</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/pages/invoice">
-                              <i className="fas fa-file-invoice" />
-                              <span>Invoices</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/review">
-                              <i className="fas fa-star" />
-                              <span>Reviews</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/chat-doctor">
-                              <i className="fas fa-comments" />
-                              <span>Message</span>
-                              <small className="unread-msg">23</small>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor/profile-setting">
-                              <i className="fas fa-user-cog" />
-                              <span>Profile Settings</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/social-media">
-                              <i className="fas fa-share-alt" />
-                              <span>Social Media</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctor-change-passwword">
-                              <i className="fas fa-lock" />
-                              <span>Change Password</span>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/index-2">
-                              <i className="fas fa-sign-out-alt" />
-                              <span>Logout</span>
-                            </Link>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
+                  <DoctorSidebar />
+
                   {/* /Profile Sidebar */}
                 </StickyBox>
               </div>

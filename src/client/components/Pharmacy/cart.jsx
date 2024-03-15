@@ -74,7 +74,7 @@ const Cart = (props) => {
                 <h2 className="breadcrumb-title">Cart</h2>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Cart

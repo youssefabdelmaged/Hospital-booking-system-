@@ -341,82 +341,11 @@ const Header = () => {
                             Doctor Dashboard
                           </Link>
                         </li>
-                        <li
-                          className={
-                            pathnames.includes("appointments") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/appointments"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Appointments
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("schedule-timing")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/schedule-timing"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Schedule Timing
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("my-patients") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/my-patients"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Patients List
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("patient-profile")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/patient-profile"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Patients Profile
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("chat-doctor") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/chat-doctor"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Chat
-                          </Link>
-                        </li>
-                        <li
-                          className={
-                            pathnames.includes("invoice") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/invoice"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Invoices
-                          </Link>
-                        </li>
+                        
+                        
+                       
+                        
+                        
                         <li
                           className={
                             pathnames.includes("profile-setting")
@@ -443,20 +372,7 @@ const Header = () => {
                             Reviews
                           </Link>
                         </li>
-                        <li
-                          className={
-                            pathnames.includes("doctor-register")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link
-                            to="/doctor/doctor-register"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Doctor Register
-                          </Link>
-                        </li>
+                       
                         <li
                           className={` ${
                             pathnames.includes("doctor-blog") ? "active" : ""
@@ -466,7 +382,7 @@ const Header = () => {
                             to="/doctor-blog"
                             onClick={() => onhandleCloseMenu()}
                           >
-                            Blog
+                            Doctor Blog
                           </Link>
                         </li>
                       </ul>

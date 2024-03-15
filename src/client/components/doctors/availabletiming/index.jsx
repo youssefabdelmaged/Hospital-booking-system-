@@ -1,7 +1,7 @@
 import React from "react";
 // import { IMG01 } from "./img";
 import { Link } from "react-router-dom";
-import Header from "../../patients/dashboard/header";
+import Header from "../../../components/header";
 import Footer from "../../footer";
 import DoctorSidebar from "../sidebar";
 
@@ -18,7 +18,7 @@ const AvailableTiming = (props) => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item" aria-current="page">
                     Available Timings
