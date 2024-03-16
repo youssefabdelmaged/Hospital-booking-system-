@@ -21,7 +21,7 @@ const MedicalDetails = (props) => {
 
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Medical Details

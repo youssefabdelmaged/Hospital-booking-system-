@@ -1,6 +1,6 @@
 import React from "react";
 import DashboardSidebar from "../sidebar/sidebar.jsx";
-import IMG01 from "../../../../assets/images/patient.jpg";
+import IMG01 from "../../../../assets/images/patients/patient.jpg";
 import StickyBox from "react-sticky-box";
 import { Link } from "react-router-dom";
 import Footer from "../../../footer.jsx";
@@ -18,7 +18,7 @@ const Profile = (props) => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Profile Settings

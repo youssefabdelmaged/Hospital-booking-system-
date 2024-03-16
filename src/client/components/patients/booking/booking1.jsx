@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IMG01 from "../../../assets/images/doctor-thumb-02.jpg";
+import IMG01 from "../../../assets/images/doctors/doctor-thumb-02.jpg";
 import DateRangePicker from "react-bootstrap-daterangepicker";
 import "bootstrap-daterangepicker/daterangepicker.css";
 import Header from "../../header";
@@ -18,7 +18,7 @@ const Booking = (props) => {
                 <h2 className="breadcrumb-title">Booking</h2>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Booking

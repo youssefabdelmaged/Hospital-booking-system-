@@ -20,7 +20,7 @@ export { default as feature01} from '../../assets/images/feature-01.jpg';
 export { default as feature02} from '../../assets/images/feature-02.jpg';
 export { default as feature03} from '../../assets/images/feature-03.jpg';
 export { default as feature04} from '../../assets/images/feature-04.jpg';
-export { default as patient} from '../../assets/images/patient.jpg';
-export { default as patient1} from '../../assets/images/patient1.jpg';
-export { default as patient2} from '../../assets/images/patient2.jpg';
+export { default as patient} from '../../assets/images/patients/patient.jpg';
+export { default as patient1} from '../../assets/images/patients/patient1.jpg';
+export { default as patient2} from '../../assets/images/patients/patient2.jpg';
 

@@ -17,7 +17,7 @@ const Password = (props) => {
                 <h2 className="breadcrumb-title">Change Password</h2>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Change Password

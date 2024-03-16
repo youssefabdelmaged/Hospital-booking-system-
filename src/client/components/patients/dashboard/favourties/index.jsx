@@ -29,7 +29,7 @@ const Favourites = (props) => {
                 <h2 className="breadcrumb-title">Favourites</h2>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/index-2">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Favourites

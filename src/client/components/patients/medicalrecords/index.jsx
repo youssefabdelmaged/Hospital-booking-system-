@@ -31,7 +31,7 @@ const MedicalRecords = (props) => {
                 <h2 className="breadcrumb-title">Medical Records</h2>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/patient/dashboard">Home</Link>
+                    <Link to="/index">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Medical Records

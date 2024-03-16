@@ -342,10 +342,6 @@ const Header = () => {
                           </Link>
                         </li>
                         
-                        
-                       
-                        
-                        
                         <li
                           className={
                             pathnames.includes("profile-setting")
@@ -414,7 +410,7 @@ const Header = () => {
                             : "submenu"
                         }`}
                       >
-                        <li
+                        {/*<li
                           className={`has-submenu ${
                             pathnames.includes("doctor") &&
                             !pathnames.includes("doctor-profile") &&
@@ -476,18 +472,12 @@ const Header = () => {
                           ) : (
                             ""
                           )}
-                        </li>
+                          </li>*/}
                         <li
-                          className={`has-submenu ${
-                            pathnames.includes("search-doctor") &&
-                            !pathnames.includes("doctor-profile") &&
-                            !pathnames.includes("search-doctor")
-                              ? "active"
-                              : ""
-                          }`}
+                        
                         >
                           <Link
-                            to="#0"
+                            to="/patient/search-doctor1"
                             className={
                               isSideSearch == "search-doctor" ? "subdrop" : ""
                             }
@@ -501,7 +491,7 @@ const Header = () => {
                           >
                             Search Doctor{" "}
                           </Link>
-                          {isSideSearch == "search-doctor" ? (
+                          {/*{isSideSearch == "search-doctor" ? (
                             <ul
                               className={
                                 isSideSearch == "search-doctor"
@@ -540,9 +530,10 @@ const Header = () => {
                             </ul>
                           ) : (
                             ""
-                          )}
+                          )}*/}
                         </li>
-                        <li
+                        
+                        {/*<li
                           className={
                             pathnames.includes("doctor-profile") ? "active" : ""
                           }
@@ -553,17 +544,13 @@ const Header = () => {
                           >
                             Doctor Profile
                           </Link>
-                        </li>
+                        </li>*/}
+
                         <li
-                          className={`has-submenu ${
-                            pathnames.includes("booking") &&
-                            !pathnames.includes("booking-success")
-                              ? "active"
-                              : ""
-                          }`}
+                          
                         >
                           <Link
-                            to="#0"
+                            to="/patient/booking1"
                             className={
                               isSidebooking == "booking" ? "subdrop" : ""
                             }
@@ -575,7 +562,8 @@ const Header = () => {
                           >
                             Booking
                           </Link>
-                          {isSidebooking == "booking" ? (
+                          
+                          {/*{isSidebooking == "booking" ? (
                             <ul
                               className={
                                 isSidebooking == "booking"
@@ -610,24 +598,15 @@ const Header = () => {
                             </ul>
                           ) : (
                             ""
-                          )}
+                          )}*/}
+                          
                         </li>
+
                         {/* <li className={pathnames.includes("booking") && !pathnames.includes("booking-success") ? "active" : ""}>
                           <Link to="/patient/booking1" onClick={() => onhandleCloseMenu()}>Booking</Link>
                         </li> */}
-                        <li
-                          className={
-                            pathnames.includes("checkout") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/patient/checkout"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Checkout
-                          </Link>
-                        </li>
-                        <li
+                        
+                        {/*<li
                           className={
                             pathnames.includes("booking-success")
                               ? "active"
@@ -640,7 +619,8 @@ const Header = () => {
                           >
                             Booking Success
                           </Link>
-                        </li>
+                        </li>*/}
+
                         <li
                           className={
                             pathnames.includes("dashboard") ? "active" : ""
@@ -665,18 +645,7 @@ const Header = () => {
                             Favourites
                           </Link>
                         </li>
-                        <li
-                          className={
-                            pathnames.includes("patient-chat") ? "active" : ""
-                          }
-                        >
-                          <Link
-                            to="/patient/patient-chat"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Chat
-                          </Link>
-                        </li>
+                        
                         <li
                           className={
                             pathnames.includes("profile") &&
@@ -692,20 +661,7 @@ const Header = () => {
                             Profile Settings
                           </Link>
                         </li>
-                        <li
-                          className={
-                            pathnames.includes("change-password")
-                              ? "active"
-                              : ""
-                          }
-                        >
-                          <Link
-                            to="/patient/change-password"
-                            onClick={() => onhandleCloseMenu()}
-                          >
-                            Change Password
-                          </Link>
-                        </li>
+                        
                       </ul>
                     ) : (
                       ""

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IMG01 from "../../../../assets/images/patient.jpg";
+import IMG01 from "../../../../assets/images/patients/patient.jpg";
 
 export const DashboardSidebar = () => {
   const pathname = window.location.pathname;
@@ -45,26 +45,30 @@ export const DashboardSidebar = () => {
                 <span>Dependent</span>
               </Link>
             </li>
-            <li className={pathname.includes("/chat-doctor") ? "active" : ""}>
+
+            {/*<li className={pathname.includes("/chat-doctor") ? "active" : ""}>
               <Link to="/patient/patient-chat">
                 <i className="fas fa-comments"></i>
                 <span>Message</span>
                 <small className="unread-msg">23</small>
               </Link>
-            </li>
+            </li>*/}
+
             <li className={pathname.includes("/accounts") ? "active" : ""}>
               <Link to="/patient/accounts">
                 <i className="fas fa-file-invoice-dollar"></i>
                 <span>Accounts</span>
               </Link>
             </li>
-            <li className={pathname.includes("/orders") ? "active" : ""}>
+
+            {/*<li className={pathname.includes("/orders") ? "active" : ""}>
               <Link to="/patient/orders">
                 <i className="fas fa-list-alt"></i>
                 <span>Orders</span>
                 <small className="unread-msg">7</small>
               </Link>
-            </li>
+          </li>*/}
+
             <li
               className={pathname.includes("/medicalrecords") ? "active" : ""}
             >

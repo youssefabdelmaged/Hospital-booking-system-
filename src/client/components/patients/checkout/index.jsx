@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IMG01 from "../../../assets/images/patient2.jpg";
+import IMG01 from "../../../assets/images/doctors/doctor-thumb-02.jpg";
 import Header from "../../header";
 import Footer from "../../footer";
 import StickyBox from "react-sticky-box";
