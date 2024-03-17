@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //icon
 // import { faHospital } from "@fortawesome/free-regular-svg-icons";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-shefaa.png";
 import IMG01 from "../assets/images/doctors/doctor-thumb-02.jpg";
 import Dropdown from "react-bootstrap/Dropdown";
 // import { useEffect } from "react";
@@ -100,7 +100,7 @@ const TopHeader = (props) => {
               </div>
               <div className="main-menu-wrapper">
                 <div className="menu-header">
-                  <Link to="/index-2" className="menu-logo">
+                  <Link to="/index" className="menu-logo">
                     <img src={logo} className="img-fluid" alt="Logo" />
                   </Link>
                   <Link

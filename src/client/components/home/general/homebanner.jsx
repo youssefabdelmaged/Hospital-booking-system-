@@ -38,12 +38,12 @@ function Homebanner() {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   </p>
-                  <Link to="/patient/booking1" className="btn">
-                    Start a Consult
+                  <Link to="/patient/search-doctor2" className="btn">
+                    Find a Doctor
                   </Link>
                 </div>
                 <div className="search-box-one aos" data-aos="fade-up">
-                  <form action={`${config}/patient/search-doctor1`}>
+                  <form action={`${config}/patient/search-doctor2`}>
                     <div className="search-input search-line">
                       <i>
                         <FeatherIcon icon="search" style={{ width: "16px" }} />
