@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
-import logo from "../assets/images/logo.png";
-import logosvg from "../assets/images/logo.svg";
+import logo from "../assets/images/logo-shefaa.png";
+import logosvg from "../assets/images/logo-shefaa.png";
 import IMG01 from "../assets/images/doctors/doctor-thumb-02.jpg";
 // import Dropdown from "react-bootstrap/Dropdown";
 import { useEffect } from "react";
@@ -260,7 +260,7 @@ const Header = () => {
               </div>
               <div className="main-menu-wrapper">
                 <div className="menu-header">
-                  <Link to="/index-2" className="menu-logo">
+                  <Link to="/index" className="menu-logo">
                     <img src={logo} className="img-fluid" alt="Logo" />
                   </Link>
                   <Link
@@ -476,7 +476,7 @@ const Header = () => {
                           </li>*/}
                         <li>
                           <Link
-                            to="/patient/search-doctor1"
+                            to="/patient/search-doctor2"
                             className={
                               isSideSearch == "search-doctor" ? "subdrop" : ""
                             }
@@ -1031,9 +1031,9 @@ const Header = () => {
                     !pathnames.includes("/index-10") &&
                     !pathnames.includes("/index-11")) ? (
                     <>
-                      {/* <li className="searchbar">
+                      <li className="searchbar">
                         <Link to="#" onClick={() => setChange(!change)}>
-                          <i> <FeatherIcon icon="search" /></i>
+                          <i> {/* <FeatherIcon icon="search" /> */}</i>
                         </Link>
                         <div
                           className={`${
@@ -1051,7 +1051,7 @@ const Header = () => {
                             </div>
                           </form>
                         </div>
-                      </li> */}
+                      </li>
                       <li className="login-link">
                         <Link to="/login">Login / Signup</Link>
                       </li>

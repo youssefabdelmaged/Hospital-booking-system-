@@ -135,7 +135,7 @@ export { default as client_09 } from "../assets/images/clients/client-09.jpg";
 
 export { default as faq_img } from "../assets/images/faq-img.png";
 export { default as faq_img_2 } from "../assets/images/faq-img-2.jpg";
-export { default as footerlogo } from "../assets/images/footer-logo.svg";
+export { default as footerlogo } from "../assets/images/logo-shefaa.png";
 export { default as footermap } from "../assets/images/bg/footer-map.jpg";
 
 export { default as uploadicon } from "../assets/images/upload-icon.png";

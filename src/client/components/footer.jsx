@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-shefaa.png";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
 const Footer = (props) => {
