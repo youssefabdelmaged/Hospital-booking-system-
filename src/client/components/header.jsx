@@ -1065,15 +1065,7 @@ const Header = () => {
                         !pathnames.includes("/index-10") &&
                         !pathnames.includes("/index-2") &&
                         !pathnames.includes("/index-11") && (
-                          // <div
-                          //   style={{
-                          //     visibility: pathnames.includes(
-                          //       "/Pharmacy/Pharmacy-index"
-                          //     )
-                          //       ? "hidden"
-                          //       : "",
-                          //   }}
-                          // >
+                         
                           <>
                             <li className="register-btn">
                               <Link to="/register" className="btn reg-btn">
