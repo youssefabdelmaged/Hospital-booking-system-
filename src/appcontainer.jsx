@@ -327,12 +327,12 @@ const AppContainer = function (props) {
               {/* pages */}
 
               <Route
-                path="/patient/search-doctor1"
+                path="/doctor/search-doctor1"
                 exact
                 component={SearchDoctor}
               />
               <Route
-                path="/patient/search-doctor2"
+                path="/doctor/search-doctor2"
                 exact
                 component={SearchDoctor2}
               />
