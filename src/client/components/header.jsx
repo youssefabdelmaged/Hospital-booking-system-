@@ -476,7 +476,7 @@ const Header = () => {
                           </li>*/}
                         <li>
                           <Link
-                            to="/patient/search-doctor2"
+                            to="/doctor/search-doctor2"
                             className={
                               isSideSearch == "search-doctor" ? "subdrop" : ""
                             }
