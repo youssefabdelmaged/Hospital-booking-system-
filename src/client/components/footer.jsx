@@ -122,7 +122,7 @@ const Footer = (props) => {
                                 style={{ width: "16px", height: "16px" }}
                               />
                             </i>{" "}
-                            doccure@example.com
+                            Shefaa@example.com
                           </p>
                         </div>
                       </div>
@@ -182,12 +182,10 @@ const Footer = (props) => {
                         <p className="mb-0">
                           {" "}
                           Copyright © 2023{" "}
-                          <Link
-                            to="https://themeforest.net/user/dreamguys/portfolio"
-                            target="_blank"
-                          >
-                            Dreamguys.
-                          </Link>{" "}
+                          
+                            Shefaa Health Care.
+
+                          {" "}
                           All Rights Reserved
                         </p>
                       </div>

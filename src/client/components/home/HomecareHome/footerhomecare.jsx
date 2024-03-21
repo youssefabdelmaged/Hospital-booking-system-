@@ -261,7 +261,7 @@ const FooterHomeCare = () => {
             </div>
           </div>
           <div className="copy-right text-center">
-            <p>Copyright © 2024 Doccure Homecare. All rights are reserved.</p>
+            <p>Copyright © 2024 Shefaa Health Care. All rights are reserved.</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
-export { default as logo} from '../assets/img/logo.png';
-export { default as logoWhite} from '../assets/img/logo-white.png';
-export { default as logoSmall} from '../assets/img/logo-small.png';
+export { default as logo} from '../assets/img/logo-shefaa.png';
+export { default as logoWhite} from '../assets/img/logo-shefaa.png';
+export { default as logoSmall} from '../assets/img/logo-small-s.png';
 export { default as favicon} from '../assets/img/favicon.png';
 
 export { default as avatar01} from '../assets/img/profiles/avatar-01.jpg';

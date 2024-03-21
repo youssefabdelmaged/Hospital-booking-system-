@@ -1505,7 +1505,7 @@ const PharmacyFeatured = () => {
         </div>
         <div className="footer-bottom">
           <div className="copy-right text-center">
-            <p>Copyright © 2024 Doccure. All Rights Reserved</p>
+            <p>Copyright © 2024 Shefaa Health Care. All Rights Reserved</p>
           </div>
         </div>
       </section>

@@ -1296,7 +1296,7 @@ const Home1 = (props) => {
                   <div className="col-md-6 col-lg-6">
                     <div className="copyright-text">
                       <p className="mb-0">
-                        © 2023 Doccure. All rights reserved.
+                        © 2023 Shefaa Health Care. All rights reserved.
                       </p>
                     </div>
                   </div>

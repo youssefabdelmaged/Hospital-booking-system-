@@ -214,7 +214,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="copyright">
               <div className="copyright-text">
-                <p className="mb-0">© 2023 Doccure. All Rights Reserved.</p>
+                <p className="mb-0">© 2023 Shefaa Health Care. All Rights Reserved.</p>
               </div>
               {/* Copyright Menu */}
               <div className="copyright-menu">

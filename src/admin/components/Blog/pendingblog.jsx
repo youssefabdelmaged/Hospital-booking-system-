@@ -212,7 +212,7 @@ const PendingBlog = () => {
                   </ul>
                   <h3 className="blog-title">
                     <Link to="/admin/blog-details">
-                      Doccure – Making your clinic painless visit?
+                      Shefaa – Making your clinic painless visit?
                     </Link>
                   </h3>
                   <p>
@@ -279,7 +279,7 @@ const PendingBlog = () => {
                   </ul>
                   <h3 className="blog-title">
                     <Link to="/admin/blog-details">
-                      Doccure – Making your clinic painless visit?
+                      Shefaa – Making your clinic painless visit?
                     </Link>
                   </h3>
                   <p>
@@ -345,7 +345,7 @@ const PendingBlog = () => {
                   </ul>
                   <h3 className="blog-title">
                     <Link to="/admin/blog-details">
-                      Doccure – Making your clinic painless visit?
+                      Shefaa – Making your clinic painless visit?
                     </Link>
                   </h3>
                   <p>

@@ -36,7 +36,7 @@ const EditBlog = () => {
                     <input
                       type="text"
                       className="form-control floating"
-                      defaultValue="Doccure – Making your clinic painless visit?"
+                      defaultValue="Shefaa – Making your clinic painless visit?"
                     />
                     <label className="focus-label">
                       Blog Title <span className="text-danger">*</span>

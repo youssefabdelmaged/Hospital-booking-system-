@@ -1579,7 +1579,7 @@ const Home12 = () => {
                   <div className="col-md-6 col-lg-6">
                     <div className="copyright-text">
                       <p className="mb-0">
-                        © 2022 Doccure. All rights reserved.
+                        © 2022 Shefaa Health Care. All rights reserved.
                       </p>
                     </div>
                   </div>

@@ -48,7 +48,7 @@ const BlogDetails = (props) => {
                     </Link>
                   </div>
                   <h3 className="blog-title">
-                    Doccure – Making your clinic painless visit?
+                    Shefaa – Making your clinic painless visit?
                   </h3>
                   <div className="blog-info clearfix">
                     <div className="post-left">

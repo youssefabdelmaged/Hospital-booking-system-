@@ -125,7 +125,7 @@ const FooterTwelve = () => {
                 <div className="fooeter-bottom">
                     <div className="container">
                         <div className="copy-right-footer">
-                            <h5>Copyright © 2024 Doccure. All Rights Reserved</h5>
+                            <h5>Copyright © 2024 Shefaa Health Care. All Rights Reserved</h5>
                             <ul className="privacy-policy">
                                 <li>
                                     <Link to="/privacy-policy">Privacy Policy</Link>
