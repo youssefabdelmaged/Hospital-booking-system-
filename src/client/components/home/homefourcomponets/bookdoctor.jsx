@@ -26,7 +26,7 @@ function Bookdoctor() {
           <div className="col-lg-3 col-md-6 aos" data-aos="fade-up">
             <div className="book-best-doctors">
               <div className="book-header">
-                <Link to="/patient/doctor-profile">
+                <Link /*to="/patient/doctor-profile"*/ to="#">
                   <img src={Doctor1} alt="" className="img-fluid" />
                 </Link>
                 <div className="img-overlay">
@@ -44,7 +44,7 @@ function Bookdoctor() {
                     <i className="fas fa-star" />
                     <span className="d-inline-block average-ratings ms-1">3.5</span>
                   </div>
-                  <Link to="/patient/doctor-profile">
+                  <Link /*to="/patient/doctor-profile"*/ to="#">
                     <h4>Dr. Ruby Perrin</h4>
                   </Link>
                   <p>MBBS, MD - General Medicine, DNB - Cardiology</p>
@@ -98,7 +98,7 @@ function Bookdoctor() {
                 <div className="row row-sm align-items-center p-3">
                   <div className="col-6">
                     <Link
-                      to="/patient/doctor-profile"
+                      /*to="/patient/doctor-profile"*/ to="#"
                       className="amt-txt"
                       tabIndex={0}>
                       $50 - $100
@@ -106,7 +106,7 @@ function Bookdoctor() {
                   </div>
                   <div className="col-6">
                     <Link
-                      to="/patient/booking1"
+                      /*to="/patient/booking1"*/ to="#"
                       className="btn book-btn"
                       tabIndex={0}>
                       Book Now
@@ -119,7 +119,7 @@ function Bookdoctor() {
           <div className="col-lg-3 col-md-6 aos" data-aos="fade-up">
             <div className="book-best-doctors">
               <div className="book-header">
-                <Link to="/patient/doctor-profile">
+                <Link /*to="/patient/doctor-profile"*/ to="#">
                   <img src={Doctor2} alt="" className="img-fluid" />
                 </Link>
                 <div className="img-overlay">
@@ -137,7 +137,7 @@ function Bookdoctor() {
                     <i className="fas fa-star" />
                     <span className="d-inline-block average-ratings ms-1">3.5</span>
                   </div>
-                  <Link to="/patient/doctor-profile">
+                  <Link /*to="/patient/doctor-profile"*/ to="#">
                     <h4>Dr. Darren Elder</h4>
                   </Link>
                   <p>MBBS, MD - General Medicine, DNB - Cardiology</p>
@@ -191,7 +191,7 @@ function Bookdoctor() {
                 <div className="row row-sm align-items-center p-3">
                   <div className="col-6">
                     <Link
-                      to="/patient/doctor-profile"
+                      /*to="/patient/doctor-profile"*/ to="#"
                       className="amt-txt"
                       tabIndex={0}>
                       $50 - $100
@@ -199,7 +199,7 @@ function Bookdoctor() {
                   </div>
                   <div className="col-6">
                     <Link
-                      to="/patient/doctor-profile"
+                      /*to="/patient/doctor-profile"*/ to="#"
                       className="btn book-btn"
                       tabIndex={0}>
                       Book Now
@@ -212,7 +212,7 @@ function Bookdoctor() {
           <div className="col-lg-3 col-md-6 aos" data-aos="fade-up">
             <div className="book-best-doctors">
               <div className="book-header">
-                <Link to="/patient/doctor-profile">
+                <Link /*to="/patient/doctor-profile"*/ to="#">
                   <img src={Doctor3} alt="" className="img-fluid" />
                 </Link>
                 <div className="img-overlay">
@@ -230,7 +230,7 @@ function Bookdoctor() {
                     <i className="fas fa-star" />
                     <span className="d-inline-block average-ratings ms-1">3.5</span>
                   </div>
-                  <Link to="/patient/doctor-profile">
+                  <Link /*to="/patient/doctor-profile"*/ to="#">
                     <h4>Dr. Deborah Angel</h4>
                   </Link>
                   <p>MBBS, MD - General Medicine, DNB - Cardiology</p>
@@ -284,7 +284,7 @@ function Bookdoctor() {
                 <div className="row row-sm align-items-center p-3">
                   <div className="col-6">
                     <Link
-                      to="/patient/doctor-profile"
+                      /*to="/patient/doctor-profile"*/ to="#"
                       className="amt-txt"
                       tabIndex={0}>
                       $50 - $100
@@ -292,7 +292,7 @@ function Bookdoctor() {
                   </div>
                   <div className="col-6">
                     <Link
-                      to="/patient/booking1"
+                      /*to="/patient/booking1"*/ to="#"
                       className="btn book-btn"
                       tabIndex={0}>
                       Book Now
@@ -305,7 +305,7 @@ function Bookdoctor() {
           <div className="col-lg-3 col-md-6 aos" data-aos="fade-up">
             <div className="book-best-doctors">
               <div className="book-header">
-                <Link to="/patient/doctor-profile">
+                <Link /*to="/patient/doctor-profile"*/ to="#">
                   <img src={Doctor4} alt="" className="img-fluid" />
                 </Link>
                 <div className="img-overlay">
@@ -323,7 +323,7 @@ function Bookdoctor() {
                     <i className="fas fa-star" />
                     <span className="d-inline-block average-ratings ms-1">3.5</span>
                   </div>
-                  <Link to="/patient/doctor-profile">
+                  <Link /*to="/patient/doctor-profile"*/ to="#">
                     <h4>Dr. Sofia Brient</h4>
                   </Link>
                   <p>MBBS, MD - General Medicine, DNB - Cardiology</p>
@@ -377,7 +377,7 @@ function Bookdoctor() {
                 <div className="row row-sm align-items-center p-3">
                   <div className="col-6">
                     <Link
-                      to="/patient/doctor-profile"
+                      /*to="/patient/doctor-profile"*/ to="#"
                       className="amt-txt"
                       tabIndex={0}>
                       $50 - $100
@@ -385,7 +385,7 @@ function Bookdoctor() {
                   </div>
                   <div className="col-6">
                     <Link
-                      to="/patient/booking1"
+                      /*to="/patient/booking1"*/ to="#"
                       className="btn book-btn"
                       tabIndex={0}>
                       Book Now
@@ -397,7 +397,7 @@ function Bookdoctor() {
           </div>
         </div>
         <div className="view-all-more text-center aos" data-aos="fade-up">
-          <Link to="/patient/doctor-profile" className="btn btn-primary">
+          <Link /*to="/patient/doctor-profile"*/ to="#" className="btn btn-primary">
             View More
           </Link>
         </div>

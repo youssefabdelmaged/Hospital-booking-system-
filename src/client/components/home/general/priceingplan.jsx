@@ -90,7 +90,7 @@ function Priceingplan() {
                       </ul>
                     </div>
                     <div className="pricing-btn">
-                      <Link to="/pages/login-email" className="btn">
+                      <Link /*to="/pages/login-email"*/ to="#" className="btn">
                         Choose Plan
                       </Link>
                     </div>
@@ -171,7 +171,7 @@ function Priceingplan() {
                       </ul>
                     </div>
                     <div className="pricing-btn">
-                      <Link to="/pages/login-email" className="btn">
+                      <Link /*to="/pages/login-email"*/ to="#" className="btn">
                         Choose Plan
                       </Link>
                     </div>
@@ -224,7 +224,7 @@ function Priceingplan() {
                       </ul>
                     </div>
                     <div className="pricing-btn">
-                      <Link to="/pages/login-email" className="btn">
+                      <Link /*to="/pages/login-email"*/ to="#" className="btn">
                         Choose Plan
                       </Link>
                     </div>
