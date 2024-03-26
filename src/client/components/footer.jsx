@@ -59,15 +59,15 @@ const Footer = (props) => {
                       <h2 className="footer-title">For Patients</h2>
                       <ul>
                         <li>
-                          <Link to="/patient/search-doctor1">
+                          <Link /*to="/patient/search-doctor1"*/ to="#">
                             Search for Doctors
                           </Link>
                         </li>
                         <li>
-                          <Link to="/login">Login</Link>
+                          <Link /*to="/login"*/ to="#">Login</Link>
                         </li>
                         <li>
-                          <Link to="/register">Register</Link>
+                          <Link /*to="/register"*/ to="#">Register</Link>
                         </li>
                       </ul>
                     </div>
@@ -77,13 +77,13 @@ const Footer = (props) => {
                       <h2 className="footer-title">For Doctors</h2>
                       <ul>
                         <li>
-                          <Link to="/doctor/appointments">Appointments</Link>
+                          <Link /*to="/doctor/appointments"*/ to="#">Appointments</Link>
                         </li>
                         <li>
-                          <Link to="/doctor/chat-doctor">Chat</Link>
+                          <Link /*to="/doctor/chat-doctor"*/ to="#">Chat</Link>
                         </li>
                         <li>
-                          <Link to="/login">Login</Link>
+                          <Link /*to="/login"*/ to="#">Login</Link>
                         </li>
                       </ul>
                     </div>
@@ -183,7 +183,7 @@ const Footer = (props) => {
                           {" "}
                           Copyright © 2023{" "}
                           
-                            Shefaa Health Care.
+                          Shefaa Health Care.
 
                           {" "}
                           All Rights Reserved
@@ -195,12 +195,12 @@ const Footer = (props) => {
                       <div className="copyright-menu">
                         <ul className="policy-menu">
                           <li>
-                            <Link to="/pages/privacy-policy">
+                            <Link /*to="/pages/privacy-policy"*/ to="#">
                               Privacy Policy
                             </Link>
                           </li>
                           <li>
-                            <Link to="/pages/terms">Terms and Conditions</Link>
+                            <Link /*to="/pages/terms"*/ to="#">Terms and Conditions</Link>
                           </li>
                         </ul>
                       </div>

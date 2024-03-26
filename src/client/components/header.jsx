@@ -309,7 +309,7 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      to="/doctor/search-doctor2"
+                      to="/doctor/doctor-dashboard"
                       className={isSideMenu == "doctors" ? "subdrop " : ""}
                       onClick={() =>
                         toggleSidebar(
@@ -393,15 +393,15 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      to="#"
-                      className={isSideMenu == "patients" ? "subdrop" : ""}
+                      to="/patient/dashboard"
+                      /*className={isSideMenu == "patients" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
                           isSideMenu == "patients" ? "submenu" : "patients"
                         )
-                      }
+                      }*/
                     >
-                      Patients <i className="fas fa-chevron-down" />
+                      Patients {/*<i className="fas fa-chevron-down" />*/}
                     </Link>
                     {isSideMenu == "patients" ? (
                       <ul
@@ -474,7 +474,8 @@ const Header = () => {
                             ""
                           )}
                           </li>*/}
-                        <li>
+
+                        {/*<li>
                           <Link
                             to="/doctor/search-doctor2"
                             className={
@@ -490,7 +491,7 @@ const Header = () => {
                           >
                             Search Doctor{" "}
                           </Link>
-                          {/*{isSideSearch == "search-doctor" ? (
+                          {isSideSearch == "search-doctor" ? (
                             <ul
                               className={
                                 isSideSearch == "search-doctor"
@@ -529,8 +530,8 @@ const Header = () => {
                             </ul>
                           ) : (
                             ""
-                          )}*/}
-                        </li>
+                          )}
+                          </li>*/}
 
                         {/*<li
                           className={
@@ -545,7 +546,7 @@ const Header = () => {
                           </Link>
                         </li>*/}
 
-                        <li>
+                        {/*<li>
                           <Link
                             to="/patient/booking1"
                             className={
@@ -560,7 +561,7 @@ const Header = () => {
                             Booking
                           </Link>
 
-                          {/*{isSidebooking == "booking" ? (
+                          {isSidebooking == "booking" ? (
                             <ul
                               className={
                                 isSidebooking == "booking"
@@ -595,14 +596,14 @@ const Header = () => {
                             </ul>
                           ) : (
                             ""
-                          )}*/}
+                          )}
                         </li>
 
-                        {/* <li className={pathnames.includes("booking") && !pathnames.includes("booking-success") ? "active" : ""}>
+                        <li className={pathnames.includes("booking") && !pathnames.includes("booking-success") ? "active" : ""}>
                           <Link to="/patient/booking1" onClick={() => onhandleCloseMenu()}>Booking</Link>
-                        </li> */}
+                        </li>
 
-                        {/*<li
+                        <li
                           className={
                             pathnames.includes("booking-success")
                               ? "active"
@@ -617,19 +618,20 @@ const Header = () => {
                           </Link>
                         </li>*/}
 
-                        <li
+                        {/*<li
                           className={
                             pathnames.includes("dashboard") ? "active" : ""
                           }
                         >
                           <Link
                             to="/patient/dashboard"
-                            onClick={() => onhandleCloseMenu()}
+                            //onClick={() => onhandleCloseMenu()}
                           >
                             Patient Dashboard
                           </Link>
-                        </li>
-                        <li
+                        </li>*/}
+
+                        {/*<li
                           className={
                             pathnames.includes("favourites") ? "active" : ""
                           }
@@ -640,9 +642,9 @@ const Header = () => {
                           >
                             Favourites
                           </Link>
-                        </li>
+                        </li>*/}
 
-                        <li
+                        {/*<li
                           className={
                             pathnames.includes("profile") &&
                             !pathnames.includes("doctor-profile")
@@ -656,8 +658,9 @@ const Header = () => {
                           >
                             Profile Settings
                           </Link>
-                        </li>
+                        </li>*/}
                       </ul>
+
                     ) : (
                       ""
                     )}
@@ -670,14 +673,14 @@ const Header = () => {
                   >
                     <Link
                       to="#"
-                      className={isSideMenu == "pages" ? "subdrop" : ""}
+                      /*className={isSideMenu == "pages" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
                           isSideMenu == "pages" ? "submenu" : "pages"
                         )
-                      }
+                      }*/
                     >
-                      Pages <i className="fas fa-chevron-down" />
+                      Pages {/*<i className="fas fa-chevron-down" />*/}
                     </Link>
                     {isSideMenu == "pages" ? (
                       <ul
@@ -905,6 +908,7 @@ const Header = () => {
                                   : "submenu"
                               }
                             > */}
+
                         {/* <li
                                 className={
                                   pathnames.includes("invoice") ? "active" : ""
@@ -917,6 +921,7 @@ const Header = () => {
                                   Error 404
                                 </Link>
                               </li> */}
+
                         {/* <li
                                 className={
                                   pathnames.includes("-view") ? "active" : ""
@@ -929,6 +934,7 @@ const Header = () => {
                                   Error 500
                                 </Link>
                               </li> */}
+
                         {/* </ul>
                           ) : (
                             ""
@@ -960,25 +966,26 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      to="/blog/blog-grid"
-                      className={isSideMenu == "blog" ? "subdrop" : ""}
+                      /*to="/blog/blog-grid"*/ to="#"
+                      /*className={isSideMenu == "blog" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")
-                      }
+                      }*/
                     >
                       Blog
                     </Link>
                   </li>
+
                   <li className="has-submenu">
                     <Link
-                      to="/admin"
-                      target="_blank"
+                      /*to="/admin"*/ to="#"
+                      /*target="_blank"
                       className={isSideMenu == "admin" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
                           isSideMenu == "admin" ? "submenu" : "admin"
                         )
-                      }
+                      }*/
                     >
                       Admin
                     </Link>
@@ -991,7 +998,8 @@ const Header = () => {
                     ) : (
                       ""
                     )}
-                  </li>
+                    </li>
+
                   {pathnames.includes("/index-5") ||
                   pathnames.includes("/index-11") ? (
                     <li className="searchbar">

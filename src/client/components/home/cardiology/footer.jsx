@@ -90,7 +90,7 @@ const Footer = () => {
                       <div className="footer-address mb-0">
                         <p>
                           <FontAwesomeIcon icon={faEnvelope} />{" "}
-                          &nbsp;doccure@example.com
+                          &nbsp;Shefaa@example.com
                         </p>
                       </div>
                     </div>
@@ -153,15 +153,15 @@ const Footer = () => {
                   <h2 className="footer-title">For Patients</h2>
                   <ul>
                     <li>
-                      <Link to="/patient/search-doctor1">
+                      <Link /*to="/patient/search-doctor1"*/ to="#">
                         Search for Doctors
                       </Link>
                     </li>
                     <li>
-                      <Link to="/login">Login</Link>
+                      <Link /*to="/login"*/ to="#">Login</Link>
                     </li>
                     <li>
-                      <Link to="/register">Register</Link>
+                      <Link /*to="/register"*/ to="#">Register</Link>
                     </li>
                   </ul>
                 </div>
@@ -171,13 +171,13 @@ const Footer = () => {
                   <h2 className="footer-title">For Doctors</h2>
                   <ul>
                     <li>
-                      <Link to="/doctor/appointments">Appointments</Link>
+                      <Link /*to="/doctor/appointments"*/ to="#">Appointments</Link>
                     </li>
                     <li>
-                      <Link to="/patient/patient-chat">Chat</Link>
+                      <Link /*to="/patient/patient-chat"*/ to="#">Chat</Link>
                     </li>
                     <li>
-                      <Link to="/login">Login</Link>
+                      <Link /*to="/login"*/ to="#">Login</Link>
                     </li>
                   </ul>
                 </div>
@@ -220,10 +220,10 @@ const Footer = () => {
               <div className="copyright-menu">
                 <ul className="policy-menu">
                   <li>
-                    <Link to="/pages/privacy-policy">Privacy Policy</Link>
+                    <Link /*to="/pages/privacy-policy"*/ to="#">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to="/pages/terms">Terms and Conditions</Link>
+                    <Link /*to="/pages/terms"*/ to="#">Terms and Conditions</Link>
                   </li>
                 </ul>
               </div>

@@ -6,6 +6,8 @@ function Notification() {
   return (
     <>
     {/* Notifications */}
+
+    {/*
     <li className="nav-item dropdown noti-nav me-3 pe-0">
       <Link
         to="#"
@@ -115,6 +117,8 @@ function Notification() {
         </div>
       </div>
     </li>
+  */}
+  
     {/* /Notifications */}
   </>
   

@@ -7,6 +7,8 @@ function Chart() {
         <>
             <>
                 {/* Cart */}
+
+            {/*    
                 <li className="nav-item dropdown noti-nav view-cart-header me-3">
                     <Link
                         to="#"
@@ -110,6 +112,7 @@ function Chart() {
                         </div>
                     </div>
                 </li>
+    */}
                 {/* /Cart */}
             </>
 

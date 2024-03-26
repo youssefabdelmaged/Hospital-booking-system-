@@ -41,7 +41,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/appointments") ? "active" : ""
                 }
               >
-                <Link to="/doctor/appointments">
+                <Link /*to="/doctor/appointments"*/ to="#">
                   <i className="fas fa-calendar-check" />
                   <span>Appointments</span>
                 </Link>
@@ -51,7 +51,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/my-patients") ? "active" : ""
                 }
               >
-                <Link to="/doctor/my-patients">
+                <Link /*to="/doctor/my-patients"*/ to="#">
                   <i className="fas fa-user-injured" />
                   <span>My Patients</span>
                 </Link>
@@ -61,7 +61,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/schedule-timing") ? "active" : ""
                 }
               >
-                <Link to="/doctor/schedule-timing">
+                <Link /*to="/doctor/schedule-timing"*/ to="#">
                   <i className="fas fa-hourglass-start" />
                   <span>Schedule Timings</span>
                 </Link>
@@ -71,7 +71,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/available-timing") ? "active" : ""
                 }
               >
-                <Link to="/doctor/available-timing">
+                <Link /*to="/doctor/available-timing"*/ to="#">
                   <i className="fas fa-clock" />
                   <span>Available Timings</span>
                 </Link>
@@ -79,7 +79,7 @@ const DoctorSidebar = () => {
               <li
                 className={pathnames.includes("/doctor/invoice") ? "active" : ""}
               >
-                <Link to="/doctor/invoice">
+                <Link /*to="/doctor/invoice"*/ to="#">
                   <i className="fas fa-file-invoice" />
                   <span>Invoices</span>
                 </Link>
@@ -89,7 +89,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/account") ? "active" : ""
                 }
               >
-                <Link to="/doctor/account">
+                <Link /*to="/doctor/account"*/ to="#">
                   <i className="fas fa-file-invoice-dollar" />
                   <span>Accounts</span>
                 </Link>
@@ -97,7 +97,7 @@ const DoctorSidebar = () => {
               <li
                 className={pathnames.includes("/doctor/review") ? "active" : ""}
               >
-                <Link to="/doctor/review">
+                <Link /*to="/doctor/review"*/ to="#">
                   <i className="fas fa-star" />
                   <span>Reviews</span>
                 </Link>
@@ -108,7 +108,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/profile-setting") ? "active" : ""
                 }
               >
-                <Link to="/doctor/profile-setting">
+                <Link /*to="/doctor/profile-setting"*/ to="#">
                   <i className="fas fa-user-cog" />
                   <span>Profile Settings</span>
                 </Link>
@@ -118,7 +118,7 @@ const DoctorSidebar = () => {
                   pathnames.includes("/doctor/social-media") ? "active" : ""
                 }
               >
-                <Link to="/doctor/social-media">
+                <Link /*to="/doctor/social-media"*/ to="#">
                   <i className="fas fa-share-alt" />
                   <span>Social Media</span>
                 </Link>
@@ -130,13 +130,13 @@ const DoctorSidebar = () => {
                     : ""
                 }
               >
-                <Link to="/doctor/doctor-change-password">
+                <Link /*to="/doctor/doctor-change-password"*/ to="#">
                   <i className="fas fa-lock" />
                   <span>Change Password</span>
                 </Link>
               </li>
               <li className={pathnames.includes("/login") ? "active" : ""}>
-                <Link to="/login">
+                <Link /*to="/login"*/ to="#">
                   <i className="fas fa-sign-out-alt" />
                   <span>Logout</span>
                 </Link>
