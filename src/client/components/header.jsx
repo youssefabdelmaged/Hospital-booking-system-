@@ -978,14 +978,14 @@ const Header = () => {
 
                   <li className="has-submenu">
                     <Link
-                      /*to="/admin"*/ to="#"
-                      /*target="_blank"
+                      to="/admin"
+                      target="_blank"
                       className={isSideMenu == "admin" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(
                           isSideMenu == "admin" ? "submenu" : "admin"
                         )
-                      }*/
+                      }
                     >
                       Admin
                     </Link>
