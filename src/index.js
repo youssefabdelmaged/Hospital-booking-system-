@@ -29,17 +29,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //   require("./client/assets/css/all.min.css");
 //   require("./client/assets/css/fontawesome.min.css");
 //   require("./client/assets/css/custom.css");
-// } 
+// }
 // console.log('window.location.pathname :>> ', window.location.pathname);
-if (window.location.pathname.includes("pharmacyadmin")) {
-  require("./pharmacyadmin/assets/plugins/fontawesome/css/fontawesome.min.css");
-  require("./pharmacyadmin/assets/plugins/fontawesome/css/all.min.css");
-  require("./pharmacyadmin/assets/css/font-awesome.min.css");
-  require("./pharmacyadmin/assets/css/custom.css");
-  require("./pharmacyadmin/assets/css/feathericon.min.css");
-  require("./pharmacyadmin/assets/js/feather.min.js");
-  require("./pharmacyadmin/assets/css/bootstrap.min.css");
-}else if (window.location.pathname.includes("admin")) {
+
+if (window.location.pathname.includes("admin")) {
   require("./admin/assets/css/feathericon.min.css");
   require("./admin/assets/js/feather.min.js");
   // require("./admin/assets/plugins/fontawesome/css/fontawesome.min.css");
@@ -51,7 +44,7 @@ if (window.location.pathname.includes("pharmacyadmin")) {
   require("./client/assets/css/all.css");
   require("./client/assets/css/all.min.css");
   require("./client/assets/css/fontawesome.min.css");
-  require("./client/assets/css/custom.css")
+  require("./client/assets/css/custom.css");
   require("../src/client/components/customstyleclient.css");
 }
 

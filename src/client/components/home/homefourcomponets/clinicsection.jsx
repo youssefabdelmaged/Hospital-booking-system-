@@ -18,7 +18,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec} alt="" />
                 <h4>Orthopedic</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -35,7 +35,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec1}  />
                 <h4>Laboratry</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -52,7 +52,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec2} />
                 <h4>Neurology</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -69,7 +69,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec3} />
                 <h4>Cardiology</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -86,7 +86,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec4}  />
                 <h4>MRI Scans</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -103,7 +103,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec5}  />
                 <h4>Primary Checkup</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -120,7 +120,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec6} />
                 <h4>Testing</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">
@@ -137,7 +137,7 @@ function Clinicsection() {
             <div className="special-body">
                 <img src={spec7}/>
                 <h4>Dentist</h4>
-                <Link /*to="/patient/booking1"*/ to="#" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
+                <Link to="/patient/booking1" className="spc-book">Book now <i className="fas fa-caret-right" /> </Link>
             </div>
             <div className="row row-sm special-footer">
                 <div className="col-6 text-left">

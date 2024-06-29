@@ -77,21 +77,20 @@ import Patientregisterstepthree from "./client/components/register/patientregist
 import Patientregisterstepfour from "./client/components/register/patientregisterstepfour";
 import Patientregisterstepfive from "./client/components/register/patientregisterstepfive";
 //pharmacy
-import Pharmacy from "./client/components/Pharmacy/pharmacy";
-import pharmacydetail from "./client/components/Pharmacy/pharmactdetail";
-import PharmacySearch from "./client/components/Pharmacy/pharmacysearch";
-import Cart from "./client/components/Pharmacy/cart";
-import Product from "./client/components/Pharmacy/product";
-import ProductDescription from "./client/components/Pharmacy/productdescription";
-import ProductCheckout from "./client/components/Pharmacy/productcheckout";
-import PayoutSuccess from "./client/components/Pharmacy/payoutsuccess";
+// import Pharmacy from "./client/components/Pharmacy/pharmacy";
+// import pharmacydetail from "./client/components/Pharmacy/pharmactdetail";
+// import PharmacySearch from "./client/components/Pharmacy/pharmacysearch";
+// import Cart from "./client/components/Pharmacy/cart";
+// import Product from "./client/components/Pharmacy/product";
+// import ProductDescription from "./client/components/Pharmacy/productdescription";
+// import ProductCheckout from "./client/components/Pharmacy/productcheckout";
+// import PayoutSuccess from "./client/components/Pharmacy/payoutsuccess";
 import AppUniversal from "./admin/app-universal";
-import PharmacyadminApp from "./pharmacyadmin/app-universal";
 import BlankPage from "./client/components/pages/starter page/index.jsx";
-import Pharmacyregister from "./client/components/Pharmacy/pharmacyregister";
-import Pharmacyregisterstepone from "./client/components/Pharmacy/pharmacyregisterstepone";
-import Pharmacyregistersteptwo from "./client/components/Pharmacy/pharmacyregistersteptwo";
-import Pharmacyregisterstepthree from "./client/components/Pharmacy/pharmacyregisterstepthree";
+// // import Pharmacyregister from "./client/components/Pharmacy/pharmacyregister";
+// import Pharmacyregisterstepone from "./client/components/Pharmacy/pharmacyregisterstepone";
+// import Pharmacyregistersteptwo from "./client/components/Pharmacy/pharmacyregistersteptwo";
+// import Pharmacyregisterstepthree from "./client/components/Pharmacy/pharmacyregisterstepthree";
 import Doctorblog from "./client/components/blog/doctorblog/doctorblog";
 import Doctoraddblog from "./client/components/blog/doctorblog/doctoraddblog";
 import Doctorpendingblog from "./client/components/blog/doctorblog/doctorpendingblog";
@@ -239,7 +238,7 @@ const AppContainer = function (props) {
         ) : url === "pharmacyadmin" ? (
           <div>
             <Switch>
-              <Route path="/pharmacyadmin" component={PharmacyadminApp} />
+              <Route path="/pharmacyadmin"  />
             </Switch>
           </div>
         ) : (
@@ -495,7 +494,7 @@ const AppContainer = function (props) {
               <Route path="/pages/privacy-policy" exact component={Policy} />
 
               {/* Pharmacy */}
-              <Route
+              {/* <Route
                 path="/Pharmacy/Pharmacy-index"
                 exact
                 component={Pharmacy}
@@ -663,7 +662,7 @@ const AppContainer = function (props) {
                 path="/pages/patient-phone-otp"
                 exact
                 component={PhoneOtp}
-              />
+              /> */}
 
               <Route path="/consultation" exact component={Consultation} />
               <Route path="/payment" exact component={Payment} />
