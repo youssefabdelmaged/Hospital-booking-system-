@@ -156,7 +156,7 @@ const Blogsection = () => {
             className="blog-btn-sec text-center aos aos-init aos-animate"
             data-aos="fade-up"
           >
-            <Link to="#" className="btn btn-primary btn-view">
+            <Link to="/blog/blog-grid" className="btn btn-primary btn-view">
               Read More Articles
             </Link>
           </div>

@@ -966,7 +966,7 @@ const Header = () => {
                     }`}
                   >
                     <Link
-                      /*to="/blog/blog-grid"*/ to="#"
+                      to="/blog/blog-grid"
                       /*className={isSideMenu == "blog" ? "subdrop" : ""}
                       onClick={() =>
                         toggleSidebar(isSideMenu == "blog" ? "submenu" : "blog")
@@ -989,39 +989,12 @@ const Header = () => {
                     >
                       Admin
                     </Link>
-                    {isSideMenu == "admin" ? (
-                      <ul
-                        className={`${
-                          isSideMenu == "admin" ? "submenu d-block" : "submenu"
-                        }`}
-                      ></ul>
-                    ) : (
-                      ""
-                    )}
-                    </li>
 
-                  {pathnames.includes("/index-5") ||
-                  pathnames.includes("/index-11") ? (
-                    <li className="searchbar">
-                      <Link to="#">
-                        <i>
-                          <FeatherIcon icon="search" />
-                        </i>
-                      </Link>
-                      <div className="togglesearch" style={{ display: "none" }}>
-                        <form action={`${config}/patient/search-doctor1`}>
-                          <div className="input-group">
-                            <input type="text" className="form-control" />
-                            <button type="submit" className="btn">
-                              Search
-                            </button>
-                          </div>
-                        </form>
-                      </div>
                     </li>
-                  ) : null}
+                  
+
                   {(!pathnames.includes("/index-10") &&
-                    pathnames.includes("index")) ||
+                  pathnames.includes("index")) ||
                   pathnames.includes("/login") ||
                   pathnames.includes("/register") ||
                   pathnames.includes("blog") ||
@@ -1039,30 +1012,7 @@ const Header = () => {
                     !pathnames.includes("/index-10") &&
                     !pathnames.includes("/index-11")) ? (
                     <>
-                      <li className="searchbar">
-                        <Link to="#" onClick={() => setChange(!change)}>
-                          <i> {/* <FeatherIcon icon="search" /> */}</i>
-                        </Link>
-                        <div
-                          className={`${
-                            change === true
-                              ? "togglesearch d-block"
-                              : "togglesearch d-none"
-                          }`}
-                        >
-                          <form action={`${config}/patient/search-doctor1`}>
-                            <div className="input-group">
-                              <input type="text" className="form-control" />
-                              <button type="submit" className="btn">
-                                Search
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                      </li>
-                      <li className="login-link">
-                        <Link to="/login">Login / Signup</Link>
-                      </li>
+                      
                       {!pathnames.includes("/index-13") &&
                         !pathnames.includes("/index-5") &&
                         !pathnames.includes("/index-6") &&

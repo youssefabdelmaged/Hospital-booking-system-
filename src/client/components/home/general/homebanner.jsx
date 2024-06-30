@@ -38,7 +38,7 @@ function Homebanner() {
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   </p>
-                  <Link /*to="/doctor/search-doctor2"*/ to="#" className="btn">
+                  <Link to="/doctor/search-doctor2" className="btn">
                     Find a Doctor
                   </Link>
                 </div>

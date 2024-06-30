@@ -34,13 +34,13 @@ export const DashboardSidebar = () => {
               </Link>
             </li>
             <li className={pathname.includes("/favourites") ? "active" : ""}>
-              <Link /*to="/patient/favourites"*/ to="#">
+              <Link to="/patient/favourites">
                 <i className="fas fa-bookmark"></i>
                 <span>Favourites</span>
               </Link>
             </li>
             <li className={pathname.includes("/dependent") ? "active" : ""}>
-              <Link /*to="/patient/dependent"*/ to="#">
+              <Link to="/patient/dependent">
                 <i className="fas fa-users"></i>
                 <span>Dependent</span>
               </Link>
@@ -55,7 +55,7 @@ export const DashboardSidebar = () => {
             </li>*/}
 
             <li className={pathname.includes("/accounts") ? "active" : ""}>
-              <Link /*to="/patient/accounts"*/ to="#">
+              <Link to="/patient/accounts">
                 <i className="fas fa-file-invoice-dollar"></i>
                 <span>Accounts</span>
               </Link>
@@ -72,7 +72,7 @@ export const DashboardSidebar = () => {
             <li
               className={pathname.includes("/medicalrecords") ? "active" : ""}
             >
-              <Link /*to="/patient/medicalrecords"*/ to="#">
+              <Link to="/patient/medicalrecords">
                 <i className="fas fa-clipboard"></i>
                 <span>Add Medical Records</span>
               </Link>
@@ -80,13 +80,13 @@ export const DashboardSidebar = () => {
             <li
               className={pathname.includes("/medicaldetails") ? "active" : ""}
             >
-              <Link /*to="/patient/medicaldetails"*/ to="#">
+              <Link to="/patient/medicaldetails">
                 <i className="fas fa-file-medical-alt"></i>
                 <span>Medical Details</span>
               </Link>
             </li>
             <li className={pathname.includes("/profile") ? "active" : ""}>
-              <Link /*to="/patient/profile"*/ to="#">
+              <Link to="/patient/profile">
                 <i className="fas fa-user-cog"></i>
                 <span>Profile Settings</span>
               </Link>
@@ -94,13 +94,13 @@ export const DashboardSidebar = () => {
             <li
               className={pathname.includes("/change-password") ? "active" : ""}
             >
-              <Link /*to="/patient/change-password"*/ to="#">
+              <Link to="/patient/change-password">
                 <i className="fas fa-lock"></i>
                 <span>Change Password</span>
               </Link>
             </li>
             <li>
-              <Link /*to="/index"*/ to="#">
+              <Link to="/index">
                 <i className="fas fa-sign-out-alt"></i>
                 <span>Logout</span>
               </Link>
