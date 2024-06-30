@@ -1,10 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../header";
 import Footer from "../../footer";
 import FeatherIcon from "feather-icons-react";
+import axios from "axios";
 
 const Contactus = (props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const postContactUs = async (contactData) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5505/api/v1/contactus/",
+        contactData
+      );
+      console.log("Response:", response.data);
+      return response.data;
+    } catch (error) {
+      console.error(
+        "Error posting contact us data:",
+        error.response ? error.response.data : error.message
+      );
+      throw error;
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    const contactData = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+    postContactUs(contactData)
+      .then((data) => {
+        console.log("Successfully posted contact us data:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  };
   return (
     <>
       <Header {...props} />
@@ -52,7 +96,7 @@ const Contactus = (props) => {
                     </div>
                     <div className="contact-details">
                       <h4>Address</h4>
-                      <p>8432 Mante Highway, Aminaport, USA</p>
+                      <p>Portsaid, Egypt</p>
                     </div>
                   </div>
                 </div>
@@ -68,7 +112,7 @@ const Contactus = (props) => {
                     </div>
                     <div className="contact-details">
                       <h4>Phone Number</h4>
-                      <p>+1 315 369 5943</p>
+                      <p>+20 120 311 6454</p>
                     </div>
                   </div>
                 </div>
@@ -84,7 +128,7 @@ const Contactus = (props) => {
                     </div>
                     <div className="contact-details">
                       <h4>Email Address</h4>
-                      <p>doccure@example.com</p>
+                      <p>shefaa@example.com</p>
                     </div>
                   </div>
                 </div>
@@ -92,7 +136,7 @@ const Contactus = (props) => {
               <div className="col-lg-7 col-md-12 d-flex">
                 <div className="card contact-form-card w-100">
                   <div className="card-body">
-                    <form action="#">
+                    <form onSubmit={handleSubmit}>
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-group">
@@ -101,6 +145,8 @@ const Contactus = (props) => {
                               type="text"
                               className="form-control"
                               placeholder="Enter Your Name"
+                              value={name}
+                              onChange={(e) => setName(e.target.value)}
                             />
                           </div>
                         </div>
@@ -111,6 +157,8 @@ const Contactus = (props) => {
                               type="text"
                               className="form-control"
                               placeholder="Enter Email Address"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
                             />
                           </div>
                         </div>
@@ -121,19 +169,12 @@ const Contactus = (props) => {
                               type="text"
                               className="form-control"
                               placeholder="Enter Phone Number"
+                              value={phone}
+                              onChange={(e) => setPhone(e.target.value)}
                             />
                           </div>
                         </div>
-                        <div className="col-md-6">
-                          <div className="form-group">
-                            <label>Services</label>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="Enter Services"
-                            />
-                          </div>
-                        </div>
+
                         <div className="col-md-12">
                           <div className="form-group">
                             <label>Message</label>
@@ -141,6 +182,8 @@ const Contactus = (props) => {
                               className="form-control"
                               placeholder="Enter your comments"
                               defaultValue={""}
+                              value={message}
+                              onChange={(e) => setMessage(e.target.value)}
                             />
                           </div>
                         </div>
