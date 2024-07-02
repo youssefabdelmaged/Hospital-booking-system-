@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useContext, useMemo } from "react";
+import React, { useState, useContext, useMemo, useEffect } from "react";
 import config from "config";
-
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+ 
+import { Route, BrowserRouter, Routes, useLocation, Router } from "react-router-dom";
 import Header from "./components/header/index";
 import Dashboard from "./components/dashboard";
 import Appointments from "./components/appointments";
@@ -50,101 +50,78 @@ const AppUniversal = function (props) {
   };
   const { isAuth, setIsAuth } = useContext(Appcontext);
 
-  const location = props?.location;
+  const location = useLocation();
 
-  useMemo(() => {
+  useEffect(() => {
     if (
-      location?.pathname == "/admin/login" ||
-      location?.pathname == "/admin/register" ||
-      location?.pathname == "/admin/forgotPassword" ||
-      location?.pathname == "/admin/lockscreen" ||
-      location?.pathname == "/admin/conform-email" ||
-      location?.pathname == "/admin/404" ||
-      location?.pathname == "/admin/500"
+      location.pathname == "/admin/login" ||
+      location.pathname == "/admin/register" ||
+      location.pathname == "/admin/forgotPassword" ||
+      location.pathname == "/admin/lockscreen" ||
+      location.pathname == "/admin/conform-email" ||
+      location.pathname == "/admin/404" ||
+      location.pathname == "/admin/500"
     ) {
       setIsAuth("admin");
     } else {
       setIsAuth("user");
     }
-  }, [location]);
+  }, [location.pathname,setIsAuth]);
 
   return (
-    <BrowserRouter basename={`${config.publicPath}`}>
+    <div>
       <div className={`main-wrapper ${menu ? "slide-nav" : ""}`}>
-        {isAuth !== "admin" && (
-          <Route
-            render={(props) => (
-              <Header {...props} onMenuClick={() => toggleMobileMenu()} />
-            )}
-          />
-        )}
-        <Switch>
-          <Route path="/admin/login" exact component={Login} />
-          <Route path="/admin/register" exact component={Register} />
-          <Route
-            path="/admin/forgotPassword"
-            exact
-            component={ForgotPassword}
-          />
-          <Route path="/admin/lockscreen" exact component={Lockscreen} />
-          <Route path="/admin" exact component={Dashboard} />
-          <Route
-            path="/admin/appointment-list"
-            exact
-            component={Appointments}
-          />
-          <Route path="/admin/specialities" exact component={Specialities} />
-          <Route path="/admin/doctor-list" exact component={Doctors} />
-          <Route path="/admin/patient-list" exact component={Patients} />
-          <Route path="/admin/reviews" exact component={Reviews} />
-          <Route
-            path="/admin/transactions-list"
-            exact
-            component={Transaction}
-          />
-          <Route path="/admin/settings" exact component={Settings} />
-          <Route path="/admin/invoicerepot" exact component={InvoiceReport} />
-          <Route path="/admin/invoice" exact component={InvoiceReportList} />
-          <Route path="/admin/blog" exact component={Blog} />
-          <Route path="/admin/blog-details" exact component={BlogDetails} />
-          <Route path="/admin/add-blog" exact component={AddBlog} />
-          <Route path="/admin/edit-blog" exact component={EditBlog} />
-          <Route path="/admin/pending-blog" exact component={PendingBlog} />
-          <Route path="/admin/profile" exact component={Profile} />
-          <Route path="/admin/product-list" exact component={ProductList} />
-          <Route path="/admin/pharmacy-list" exact component={PharmacyList} />
-          <Route path="/admin/pharmacy-category" exact component={Categories} />
-          {/* <Route path="/admin/invoice" exact component={Invoice} /> */}
 
-          <Route path="/admin/404" exact component={Error} />
-          <Route path="/admin/500" exact component={ErrorPage} />
-          <Route path="/admin/blank-page" exact component={BlankPage} />
-          <Route path="/admin/components" exact component={Components} />
-          <Route path="/admin/basic-input" exact component={BasicInput} />
-          <Route path="/admin/form-input-group" exact component={FormInput} />
-          <Route
-            path="/admin/form-horizontal"
-            exact
-            component={FormHorizontal}
-          />
-          <Route path="/admin/form-vertical" exact component={FormVertical} />
-          <Route path="/admin/form-mask" exact component={FormMask} />
-          <Route
-            path="/admin/form-validation"
-            exact
-            component={FormValidation}
-          />
-          <Route path="/admin/tables-basic" exact component={BasicTables} />
-          <Route path="/admin/data-tables" exact component={DataTables} />
+      {isAuth !== "admin" && (
+          <Header onMenuClick={toggleMobileMenu} />
+        )}
+       <div>
+        <Routes>
+          <Route path="/admin" element={<Dashboard/>} />
+          <Route path="/admin/login" element={<Login />} />
+          <Route path="/admin/register" element={<Register />} />
+          <Route path="/admin/forgotPassword" element={<ForgotPassword />} />
+          <Route path="/admin/lockscreen" element={<Lockscreen />} />
+          <Route path="/admin/appointment-list" element={<Appointments />} />
+          <Route path="/admin/specialities" element={<Specialities />} />
+          <Route path="/admin/doctor-list" element={<Doctors />} />
+          <Route path="/admin/patient-list" element={<Patients />} />
+          <Route path="/admin/reviews" element={<Reviews />} />
+          <Route path="/admin/transactions-list" element={<Transaction />} />
+          <Route path="/admin/settings" element={<Settings />} />
+          <Route path="/admin/invoicerepot" element={<InvoiceReport />} />
+          <Route path="/admin/invoice" element={<InvoiceReportList />} />
+          <Route path="/admin/blog" element={<Blog />} />
+          <Route path="/admin/blog-details" element={<BlogDetails />} />
+          <Route path="/admin/add-blog" element={<AddBlog />} />
+          <Route path="/admin/edit-blog" element={<EditBlog />} />
+          <Route path="/admin/pending-blog" element={<PendingBlog />} />
+          <Route path="/admin/profile" element={<Profile />} />
+          <Route path="/admin/product-list" element={<ProductList />} />
+          <Route path="/admin/pharmacy-list" element={<PharmacyList />} />
+          <Route path="/admin/pharmacy-category" element={<Categories />} />
+          <Route path="/admin/404" element={<Error />} />
+          <Route path="/admin/500" element={<ErrorPage />} />
+          <Route path="/admin/blank-page" element={<BlankPage />} />
+          <Route path="/admin/components" element={<Components />} />
+          <Route path="/admin/basic-input" element={<BasicInput />} />
+          <Route path="/admin/form-input-group" element={<FormInput />} />
+          <Route path="/admin/form-horizontal" element={<FormHorizontal />} />
+          <Route path="/admin/form-vertical" element={<FormVertical />} />
+          <Route path="/admin/form-mask" element={<FormMask />} />
+          <Route path="/admin/form-validation" element={<FormValidation />} />
+          <Route path="/admin/tables-basic" element={<BasicTables />} />
+          <Route path="/admin/data-tables" element={<DataTables />} />
           <Route
             path="/admin/product-category"
-            exact
-            component={ProductCategories}
+            element={<ProductCategories />}
           />
-        </Switch>
+        </Routes>
+        </div>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
+
 
 export default AppUniversal;

@@ -26,10 +26,12 @@ import Bookdoctor from "../homefourcomponets/bookdoctor";
 import Stepstofollow from "../../home/cardiology/stepstofollow";
 import Blogsection from "../browsebySpecialities/Home7/blogsection";
 import FeedBackHome9 from "../FertilityHome/FeedBackHome9";
+import { useLocation } from "react-router-dom";
 function Generalhome(props) {
-  let pathname = props.location.pathname;
+  const location = useLocation()
+  let {pathname} =location;
 
-  if (props.location.pathname === "/index") {
+  if (pathname === "/index") {
     require("../../../assets/css/feather.css");
   }
   // useEffect(() => {

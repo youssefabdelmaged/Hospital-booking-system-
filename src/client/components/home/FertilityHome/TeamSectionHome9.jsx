@@ -6,13 +6,13 @@ import {
   serv_img_icon_1,
   serv_img_icon_2,
 } from "../../imagepath";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 // import OwlCarousel from "react-owl-carousel";
 // import "owl.carousel/dist/assets/owl.carousel.css";
 // import "owl.carousel/dist/assets/owl.theme.default.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactOwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
 // import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 function TeamSectionHome9() {
   useEffect(() => {

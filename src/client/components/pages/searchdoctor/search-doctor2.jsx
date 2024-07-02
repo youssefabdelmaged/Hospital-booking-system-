@@ -4,15 +4,17 @@ import Header from "../../header";
 import StickyBox from "react-sticky-box";
 import Doctors from "./doctors";
 import Footer from "../../footer";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import Slider from "react-slider";
 
 const SearchDoctor2 = (props) => {
+  const location = useLocation();
+  const {pathname} = location
   // let pathname = props.location.pathname;
 
-  // if (props.location.pathname === "/patient/search-doctor2") {
-  //   require("../../../assets/css/feather.css");
-  // }
+  if (pathname === "/patient/search-doctor2" || "/doctor/search-doctor2") {
+    require("../../../assets/css/feather.css");
+  }
   const [minValue, setMinValue] = useState(10);
   const [maxValue, setMaxValue] = useState(5000);
 

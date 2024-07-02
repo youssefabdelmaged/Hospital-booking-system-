@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import FeatherIcon from "feather-icons-react";
 // import { avatar01, avatar02, avatar03, avatar05, avatar06, logo, logoSmall } from '../imagepath'
 // import { Appcontext } from "../../../approuter";
@@ -15,6 +15,7 @@ import {
 } from "../imagepath";
 
 const Header = (props) => {
+  const {pathname} = useLocation()
   // let pathname = props.location.pathname;
   // const { isAuth, setIsAuth } = useContext(Appcontext);
   // const [task, settask] = useState(true);
@@ -42,7 +43,7 @@ const Header = (props) => {
     document.body.classList.toggle("slide-nav");
   };
 
-  if (props.location.pathname.split("/")[1] === "admin") {
+  if (pathname.split("/")[1] === "admin") {
     require("../../assets/css/feathericon.min.css");
     require("../../assets/js/feather.min.js");
     require("../../assets/plugins/fontawesome/css/fontawesome.min.css");
@@ -53,7 +54,7 @@ const Header = (props) => {
   }
 
   const exclusionArray = ["/admin/login"];
-  if (exclusionArray.indexOf(props.location.pathname) >= 0) {
+  if (exclusionArray.indexOf(pathname) >= 0) {
     return "";
   }
 

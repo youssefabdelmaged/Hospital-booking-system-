@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
 
@@ -58,93 +58,60 @@ const ClientAppUniversal = function (props) {
   return (
     <BrowserRouter>
       <div>
-        <Route path="/join" exact component={Dropzone} />
+        {/* <Route path="/join" exact component={Dropzone} /> */}
         <Route path="/sider-menu" exact component={SideMenu} />
         <Route render={(props) => <Header {...props} />} />
-        <Switch>
-          <Route path="/patient/doctor-grid" exact component={DoctorGrid} />
-          <Route path="/patient/doctor-list" exact component={DoctorList} />
-          <Route path="/pages/video-call" exact component={VideoCall} />
-          <Route path="/pages/component" exact component={Components} />
-          <Route path="/pages/blank-page" exact component={BlankPage} />
-          <Route path="/pages/voice-call" exact component={VoiceCall} />
-          <Route path="/doctor/chat-doctor" exact component={DoctorChat} />
+        <Routes>
+          <Route path="/patient/doctor-grid" element={<DoctorGrid />} />
+          <Route path="/patient/doctor-list" element={<DoctorList />} />
+          <Route path="/pages/video-call" element={<VideoCall />} />
+          <Route path="/pages/component" element={<Components />} />
+          <Route path="/pages/voice-call" element={<VoiceCall />} />
+          <Route path="/doctor/chat-doctor" element={<DoctorChat />} />
+          <Route path="/login" element={<LoginContainer />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/index-2" element={<Home />} />
 
-          <Route path="/login" exact component={LoginContainer} />
-          <Route path="/register" exact component={Register} />
-          <Route path="/forgot-password" exact component={ForgotPassword} />
-          <Route path="/index-2" exact component={Home} />
           {/* blog */}
-          <Route path="/blog/blog-list" exact component={BlogList} />
-          <Route path="/blog/blog-grid" exact component={BlogGrid} />
-          <Route path="/blog/blog-details" exact component={BlogDetails} />
+          <Route path="/blog/blog-grid" element={<BlogGrid />} />
+          <Route path="/blog/blog-details" element={<BlogDetails />} />
+
           {/* pages */}
-          {/* <Route path="/video-call" exact component={VideoCall} />
-					<Route path="/voice-call" exact component={VoiceCall} /> */}
-          <Route path="/patient/search-doctor" exact component={SearchDoctor} />
-          <Route path="/pages/calendar" exact component={Calendar} />
-          <Route path="/pages/invoice" exact component={Invoice} />
-          <Route path="/doctor/invoice-view" exact component={InvoiceView} />
+          <Route path="/pages/calendar" element={<Calendar />} />
+          <Route path="/pages/invoice" element={<Invoice />} />
+          <Route path="/doctor/invoice-view" element={<InvoiceView />} />
 
-          <Route
-            path="/patient/doctor-profile"
-            exact
-            component={DoctorProfile}
-          />
-          <Route path="/doctor/my-patients" exact component={MyPatient} />
-          <Route path="/patient/booking/booking1" exact component={Booking} />
-          <Route path="/patient/booking/booking2" exact component={Booking2} />
+          <Route path="/patient/doctor-profile" element={<DoctorProfile />} />
+          <Route path="/doctor/my-patients" element={<MyPatient />} />
+          <Route path="/patient/booking/booking2" element={<Booking2 />} />
 
-          <Route path="/patient/patient-chat" exact component={PatientChat} />
-          <Route path="/patient/checkout" exact component={Checkout} />
-          <Route
-            path="/patient/booking-success"
-            exact
-            component={BookingSuccess}
-          />
-          <Route path="/patient/dashboard" exact component={Dashboard} />
-          <Route path="/patient/favourites" exact component={Favourties} />
-          <Route path="/patient/profile" exact component={Profile} />
-          <Route path="/patient/change-password" exact component={Password} />
+          <Route path="/patient/patient-chat" element={<PatientChat />} />
+          <Route path="/patient/checkout" element={<Checkout />} />
+          <Route path="/patient/booking-success" element={<BookingSuccess />} />
+          <Route path="/patient/dashboard" element={<Dashboard />} />
+          <Route path="/patient/favourites" element={<Favourties />} />
+          <Route path="/patient/profile" element={<Profile />} />
+          <Route path="/patient/change-password" element={<Password />} />
+
           <Route
             path="/doctor/doctor-dashboard"
-            exact
-            component={DoctorDashboard}
+            element={<DoctorDashboard />}
           />
-          <Route path="/social-media" exact component={SocialMedia} />
-          <Route
-            path="/doctor/schedule-timing"
-            exact
-            component={ScheduleTiming}
-          />
-          <Route
-            path="/doctor-change-passwword"
-            exact
-            component={DoctorPassword}
-          />
-          {/* <Route path="/chat-doctor" exact component={DoctorChat} /> */}
-          <Route path="/doctor/appointments" exact component={Appointments} />
-          <Route
-            path="/doctor/patient-profile"
-            exact
-            component={PatientProfile}
-          />
-          <Route path="/add-prescription" exact component={AddPescription} />
-          <Route path="/add-billing" exact component={AddBilling} />
-          <Route
-            path="/doctor/profile-setting"
-            exact
-            component={ProfileSetting}
-          />
-          <Route path="/doctor/review" exact component={Review} />
-          <Route
-            path="/doctor/doctor-register"
-            exact
-            component={DoctorRegister}
-          />
-          <Route path="/terms" exact component={Terms} />
-          <Route path="/privacy-policy" exact component={Policy} />
-        </Switch>
+          <Route path="/social-media" element={<SocialMedia />} />
+          <Route path="/doctor/schedule-timing" element={<ScheduleTiming />} />
+          <Route path="/doctor-change-password" element={<DoctorPassword />} />
+          <Route path="/doctor/appointments" element={<Appointments />} />
+          <Route path="/doctor/patient-profile" element={<PatientProfile />} />
+          <Route path="/add-prescription" element={<AddPescription />} />
+          <Route path="/add-billing" element={<AddBilling />} />
+          <Route path="/doctor/profile-setting" element={<ProfileSetting />} />
+          <Route path="/doctor/review" element={<Review />} />
+          <Route path="/doctor/doctor-register" element={<DoctorRegister />} />
+
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy-policy" element={<Policy />} />
+        </Routes>
         <Route render={(props) => <Footer {...props} />} />
       </div>
     </BrowserRouter>

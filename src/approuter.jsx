@@ -1,19 +1,22 @@
 import React, { createContext, useState } from "react";
-import AppContainer from "./appcontainer.jsx";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import config from 'config';
-
+import AppContainer from "./appcontainer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import config from "config";
+import GeneralHome from "./client/components/home/general/generalhome.jsx";
+import AppUniversal from "./admin/app-universal.jsx";
 
 export const Appcontext = createContext();
 
-const AppRouter = () => {
+const AppRouter = ({ props }) => {
   const [isAuth, setIsAuth] = useState("user");
-  // const config = "/react/template/";
+
   return (
     <Router basename={`${config.publicPath}`}>
-
-    <Appcontext.Provider value={{ isAuth, setIsAuth }}>
-        <Route render={(props) => <AppContainer {...props} />} />
+      <Appcontext.Provider value={{ isAuth, setIsAuth }}>
+        <Routes>
+          <Route path="/*" element={<AppContainer {...props} />} />
+        
+        </Routes>
       </Appcontext.Provider>
     </Router>
   );

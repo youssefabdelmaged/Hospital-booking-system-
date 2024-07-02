@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../assets/images/logo-shefaa.png";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
 const Footer = (props) => {
+ const {pathname} = useLocation()
   //Aos
 
   useEffect(() => {
@@ -25,18 +26,18 @@ const Footer = (props) => {
     "/patient/doctor-list",
     "/patient/doctor-grid",
   ];
-  if (exclusionArray.indexOf(props.location.pathname) >= 0) {
+  if (exclusionArray.indexOf(pathname) >= 0) {
     return "";
   }
 
   return (
     <>
-      {!props.location.pathname.includes("/index-6") &&
-        !props.location.pathname.includes("/index-7") &&
-        !props.location.pathname.includes("/index-8") &&
-        !props.location.pathname.includes("/index-6") &&
-        !props.location.pathname.includes("/index-7") &&
-        !props.location.pathname.includes("/index-8") && (
+      {!pathname.includes("/index-6") &&
+        !pathname.includes("/index-7") &&
+        !pathname.includes("/index-8") &&
+        !pathname.includes("/index-6") &&
+        !pathname.includes("/index-7") &&
+        !pathname.includes("/index-8") && (
           <footer className="footer footer-one">
             <div className="footer-top">
               <div className="container">

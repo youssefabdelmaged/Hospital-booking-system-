@@ -1,13 +1,62 @@
-import React, { useEffect } from "react";
-// import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import loginBanner from "../../../assets/images/login-banner.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../../header";
 import Footer from "../../footer";
+import axios from "axios";
 
 const DoctorRegister = (props) => {
-  const config = "/react/template";
-  // const history = useHistory();
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [password, setPassword] = useState("");
+
+  const postDoctor = async (DoctorInfo) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5505/api/v1/auth/doctor/signup",
+        DoctorInfo
+      );
+      console.log("Response:", response.data);
+      return response.data;
+    } catch (error) {
+      console.error(
+        "Error posting user data:",
+        error.response ? error.response.data : error.message
+      );
+      throw error;
+    }
+  };
+
+  const DoctorInfo = {
+    name: name,
+    email: email,
+    password: password,
+    phoneNumber: number,
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    postDoctor(DoctorInfo)
+      .then((data) => {
+        console.log("Successfully posted New Doctor:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+      
+      if (name && email && password)
+     { navigate("/login")}
+
+    setName("");
+    setEmail("");
+    setPassword("");
+
+  };
+
+  const config = "/shefaa/system";
   useEffect(() => {
     document.getElementsByTagName("body")[0].className = "account-page";
 
@@ -38,22 +87,53 @@ const DoctorRegister = (props) => {
                       </h3>
                     </div>
 
-                    <form action={`${config}/registerstepone`}>
+                    <form
+                      action={`${config}/registerstepone`}
+                      onSubmit={handleSubmit}
+                    >
+
                       <div className="form-group form-focus">
-                        <input type="text" className="form-control floating" />
+                        <input
+                          type="text"
+                          className="form-control floating"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                        />
                         <label className="focus-label">Name</label>
                       </div>
+
+
                       <div className="form-group form-focus">
-                        <input type="text" className="form-control floating" />
-                        <label className="focus-label">Mobile Number</label>
+                        <input
+                          type="text"
+                          className="form-control floating"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <label className="focus-label">Email</label>
                       </div>
+
+                      <div className="form-group form-focus">
+                        <input
+                          type="tel"
+                          className="form-control floating"
+                          value={number}
+                          onChange={(e) => setNumber(e.target.value)}
+                        />
+                        <label className="focus-label">Phone Number</label>
+                      </div>
+
                       <div className="form-group form-focus">
                         <input
                           type="password"
                           className="form-control floating"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                         <label className="focus-label">Create Password</label>
                       </div>
+
+                      
                       <div className="text-end">
                         <Link to="/login" className="forgot-link">
                           Already have an account?

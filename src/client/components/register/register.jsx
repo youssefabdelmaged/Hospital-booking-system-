@@ -1,18 +1,64 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 // import loginBanner from "../../assets/images/login-banner.png";
 import loginBanner from "../../assets/images/login-banner.png";
 import Header from "../header";
 import Footer from "../footer";
+import axios from "axios";
 
 const Register = (props) => {
-  // const history = useHistory();
-
   useEffect(() => {
     document.body.classList.add("account-page");
 
     return () => document.body.classList.remove("account-page");
   }, []);
+
+  const navigate = useNavigate();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const postUser = async (UserInfo) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5505/api/v1/auth/user/signup",
+        UserInfo
+      );
+      console.log("Response:", response.data);
+      return response.data;
+    } catch (error) {
+      console.error(
+        "Error posting user data:",
+        error.response ? error.response.data : error.message
+      );
+      throw error;
+    }
+  };
+
+  const UserInfo = {
+    name: name,
+    email: email,
+    password: password,
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
+    postUser(UserInfo)
+      .then((data) => {
+        console.log("Successfully posted User:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+
+    setName("");
+    setEmail("");
+    setPassword("");
+
+    navigate("/login");
+  };
 
   return (
     <>
@@ -44,39 +90,50 @@ const Register = (props) => {
                         </h3>
                       </div>
                       {/* Register Form */}
-                      <form>
+                      <form onSubmit={handleSubmit}>
                         <div className="form-group form-focus">
                           <input
                             type="text"
                             className="form-control floating"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                           />
                           <label className="focus-label">Name</label>
                         </div>
+
                         <div className="form-group form-focus">
                           <input
                             type="text"
                             className="form-control floating"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
-                          <label className="focus-label">Mobile Number</label>
+                          <label className="focus-label">Email</label>
                         </div>
+
                         <div className="form-group form-focus">
                           <input
                             type="password"
                             className="form-control floating"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                           <label className="focus-label">Create Password</label>
                         </div>
+
                         <div className="text-end">
                           <Link className="forgot-link" to="/login">
                             Already have an account?
                           </Link>
                         </div>
-                        <Link to="/patient/patientregisterstep-1"
+
+                        <button
                           className="btn btn-primary w-100 btn-lg login-btn"
                           type="submit"
                         >
                           Signup
-                        </Link>
+                        </button>
+
                         <div className="login-or">
                           <span className="or-line" />
                           <span className="span-or">or</span>
