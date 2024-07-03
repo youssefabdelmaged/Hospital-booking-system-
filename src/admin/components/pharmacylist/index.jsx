@@ -20,7 +20,7 @@ const PharmacyList = () => {
     { label: "Hospital", value: "Hospital" },
   ]);
   const [setStateValue] = useState();
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   return (
     <>

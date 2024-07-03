@@ -8,7 +8,7 @@ import "react-phone-input-2/lib/style.css";
 import AuthenticationHeader from "../../authiticationHeader";
 
 const LoginPhoneOtp = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       {/* <Header {...props} /> */}

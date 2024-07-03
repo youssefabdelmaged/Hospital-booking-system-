@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { shape01, shape02 } from "./img";
 
 const SuccessSignup = (props) => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       <Header {...props} />

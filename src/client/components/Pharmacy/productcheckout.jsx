@@ -5,7 +5,7 @@ import Header from "../header";
 import Footer from "../footer";
 
 const ProductCheckout = (props) => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   return (
     <div className="main-wrapper">

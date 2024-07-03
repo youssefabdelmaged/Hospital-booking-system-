@@ -3,7 +3,7 @@ import Headerconsultation from "./headerconsultation";
 import { Link } from "react-router-dom";
 
 const Loginemail = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <div className="main-wrapper">
       <Headerconsultation />

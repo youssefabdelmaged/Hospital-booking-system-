@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const homeSearch = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <section className="section section-search">
       <div className="container-fluid">

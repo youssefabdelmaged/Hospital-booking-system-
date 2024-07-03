@@ -2,7 +2,7 @@ import React from "react";
 import { avatar2, logo } from "../imagepath";
 import { Link } from "react-router-dom";
 const Lockscreen = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       <div className="main-wrapper login-body">

@@ -30,7 +30,7 @@ import Notification from "./notification";
 import Chart from "./chart";
 
 const Header = (props) => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   //Aos
 
   useEffect(() => {

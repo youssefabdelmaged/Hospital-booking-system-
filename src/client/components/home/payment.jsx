@@ -4,7 +4,7 @@ import { doctor02 } from "../pages/aboutus/img";
 import { Link } from "react-router-dom";
 
 const Payment = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <div className="main-wrapper">
       <Headerconsultation />

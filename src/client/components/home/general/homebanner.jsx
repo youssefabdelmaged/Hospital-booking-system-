@@ -13,7 +13,7 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";
 function Homebanner() {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleDateChange = (date) => {
@@ -43,7 +43,7 @@ function Homebanner() {
                   </Link>
                 </div>
                 <div className="search-box-one aos" data-aos="fade-up">
-                  <form action={`${config}/patient/search-doctor2`}>
+                  <form action={`${config}/doctor/search-doctor2`}>
                     <div className="search-input search-line">
                       <i>
                         <FeatherIcon icon="search" style={{ width: "16px" }} />

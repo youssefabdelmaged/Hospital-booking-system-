@@ -5,7 +5,7 @@ import Header from "../header";
 import Footer from "../footer";
 
 const Pharmacyregister = (props) => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   useEffect(() => {
     document.body.classList.add("account-page");

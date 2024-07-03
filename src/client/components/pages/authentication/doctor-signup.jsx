@@ -9,7 +9,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 const DoctorSignup = () => {
   const [tab, setTab] = useState(true);
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       {/* <Header {...props} /> */}

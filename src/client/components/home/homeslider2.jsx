@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
 const HomeSlider2 = (props) => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   //Aos
 

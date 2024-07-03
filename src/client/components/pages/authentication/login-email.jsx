@@ -6,7 +6,7 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import AuthenticationHeader from "../../authiticationHeader";
 const LoginEmail = () => {
   // let inputRef = useRef();
-  const config = "/react/template";
+  const config = "/shefaa/system";
   // const showIcon = () => (
   //   <i aria-hidden="true">
   //     <FeatherIcon icon="eye" style={{ width: "16px" }} />

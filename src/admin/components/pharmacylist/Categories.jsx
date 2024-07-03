@@ -12,7 +12,7 @@ const Categories = () => {
   const toggleFilterMenu1 = () => {
     setShow1(!show1);
   };
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       <SidebarNav />

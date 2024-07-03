@@ -25,7 +25,7 @@ const ProductList = () => {
   ]);
   const [setStateValue] = useState();
   const [setStateOptions] = useState();
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   return (
     <>

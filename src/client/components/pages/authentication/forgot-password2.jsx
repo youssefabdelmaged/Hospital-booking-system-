@@ -7,7 +7,7 @@ import { shape01, shape02 } from "./img";
 import AuthenticationHeader from "../../authiticationHeader";
 
 const ForgotPassword2 = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       {/* <Header {...props} /> */}

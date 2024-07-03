@@ -29,7 +29,7 @@ const Homebanner = () => {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   const options = [
     { value: 1, label: "English" },

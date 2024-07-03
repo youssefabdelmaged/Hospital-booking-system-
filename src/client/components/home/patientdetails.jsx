@@ -6,7 +6,7 @@ import { appimg, devicemessage, googleimg, smartphone } from "../imagepath";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Select from "react-select";
 const Patientdetails = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
 
   const options = [
     { value: 1, label: "Select" },

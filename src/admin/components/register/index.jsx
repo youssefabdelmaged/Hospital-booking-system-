@@ -2,7 +2,7 @@ import React from "react";
 import { logoWhite } from "../imagepath";
 import { Link } from "react-router-dom";
 const Register = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       <div className="main-wrapper login-body">

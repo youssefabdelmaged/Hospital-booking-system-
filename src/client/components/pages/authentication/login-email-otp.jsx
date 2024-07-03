@@ -6,7 +6,7 @@ import { googleicon, shape01, shape02 } from "./img";
 // import config from "config";
 import AuthenticationHeader from "../../authiticationHeader";
 const LoginEmailOtp = () => {
-  const config = "/react/template";
+  const config = "/shefaa/system";
   return (
     <>
       {/* <Header {...props} /> */}
