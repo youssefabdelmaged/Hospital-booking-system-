@@ -1,2 +1,2 @@
 
-export { default as IMG01} from '../../../../assets/images/logo.png';
+export { default as IMG01} from '../../../../assets/images/logo-shefaa.png';
