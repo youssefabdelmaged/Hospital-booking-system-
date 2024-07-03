@@ -49,9 +49,11 @@ const Header = () => {
       duration: 1200,
       once: true,
     });
-  }, []);
 
-  const config = "/react/template";
+  }, []);
+  
+  const user = localStorage.getItem("user");
+  const config = "/shefaa/system";
 
   //mobile menu
   const [change, setChange] = useState(false);
@@ -317,7 +319,7 @@ const Header = () => {
                         )
                       }
                     >
-                      Doctors 
+                      Doctors
                       {/* <i className="fas fa-chevron-down" /> */}
                     </Link>
                     {/* {isSideMenu == "doctors" ? (
@@ -660,7 +662,6 @@ const Header = () => {
                           </Link>
                         </li>*/}
                       </ul>
-
                     ) : (
                       ""
                     )}
@@ -989,12 +990,10 @@ const Header = () => {
                     >
                       Admin
                     </Link>
-
-                    </li>
-                  
+                  </li>
 
                   {(!pathnames.includes("/index-10") &&
-                  pathnames.includes("index")) ||
+                    pathnames.includes("index")) ||
                   pathnames.includes("/login") ||
                   pathnames.includes("/register") ||
                   pathnames.includes("blog") ||
@@ -1012,7 +1011,6 @@ const Header = () => {
                     !pathnames.includes("/index-10") &&
                     !pathnames.includes("/index-11")) ? (
                     <>
-                      
                       {!pathnames.includes("/index-13") &&
                         !pathnames.includes("/index-5") &&
                         !pathnames.includes("/index-6") &&
@@ -1023,27 +1021,30 @@ const Header = () => {
                         !pathnames.includes("/index-10") &&
                         !pathnames.includes("/index-2") &&
                         !pathnames.includes("/index-11") && (
-                         
                           <>
-                            <li className="register-btn">
-                              <Link to="/register" className="btn reg-btn">
-                                <i>
-                                  <FeatherIcon icon="user" />
-                                </i>
-                                Register
-                              </Link>
-                            </li>
-                            <li className="register-btn">
-                              <Link
-                                to="/login"
-                                className="btn btn-primary log-btn"
-                              >
-                                <i>
-                                  <FeatherIcon icon="lock" />
-                                </i>
-                                Login
-                              </Link>
-                            </li>
+                            {!user ? (
+                              <>
+                                <li className="register-btn">
+                                  <Link to="/register" className="btn reg-btn">
+                                    <i>
+                                      <FeatherIcon icon="user" />
+                                    </i>
+                                    Register
+                                  </Link>
+                                </li>
+                                <li className="register-btn">
+                                  <Link
+                                    to="/login"
+                                    className="btn btn-primary log-btn"
+                                  >
+                                    <i>
+                                      <FeatherIcon icon="lock" />
+                                    </i>
+                                    Login
+                                  </Link>
+                                </li>
+                              </>
+                            ) : null}
                           </>
                           // {/* </div> */}
                         )}
