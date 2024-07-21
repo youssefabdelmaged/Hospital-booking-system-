@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import { Doctor01, Doctor2, Doctor3 } from "../../home/image";
 // import { doctor04, doctor05 } from "../aboutus/img";
 import {
@@ -22,16 +22,53 @@ import {
 } from "../../imagepath";
 import { Link } from "react-router-dom";
 import Select from "react-select";
+import axios from "axios";
 
 const Doctors = () => {
-  const options = [
-    { value: 1, label: "A to Z" },
-    { value: 2, label: "B to Z" },
-    { value: 3, label: "C to Z" },
-    { value: 4, label: "D to Z" },
-    { value: 5, label: "E to Z" },
-  ];
-  return (
+  const [doctors, setDoctors] = useState([]);
+  
+  const getAllDoctors = async (token) => {
+    try {
+      const response = await axios.get("http://localhost:5505/api/v1/doctors", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(response.data);
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching doctors:", error);
+      throw error;
+    }
+  };
+  
+  const token = localStorage.getItem("token").slice(1, -1);
+  
+  useEffect(() => {
+    if (token) {
+      getAllDoctors(token)
+        .then((doctorsData) => {
+          setDoctors(doctorsData.data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+      }
+    }, [token]);
+    console.log(doctors);
+
+
+
+    const options = [
+      { value: 1, label: "A to Z" },
+      { value: 2, label: "B to Z" },
+      { value: 3, label: "C to Z" },
+      { value: 4, label: "D to Z" },
+      { value: 5, label: "E to Z" },
+    ];
+    
+    return (
     <div>
       <div className="doctor-filter-info">
         <div className="doctor-filter-inner">
@@ -92,78 +129,90 @@ const Doctors = () => {
           </div>
         </div>
       </div>
-      <div className="card doctor-card">
-        <div className="card-body">
-          <div className="doctor-widget-one">
-            <div className="doc-info-left">
-              <div className="doctor-img">
-                <Link to="/patient/doctor-list">
-                  <img src={doctor_13} className="img-fluid" alt="" />
-                </Link>
-                <div className="favourite-btn">
-                  <Link to="/patient/map-list" className="favourite-icon">
-                    <FiHeart />
-                  </Link>
+ 
+        
+          <div className="card doctor-card" >
+            <div className="card-body">
+              <div className="doctor-widget-one">
+                <div className="doc-info-left">
+                  <div className="doctor-img">
+                    <Link to="/patient/doctor-profile">
+                      <img src={doctor_13} className="img-fluid" alt="" />
+                    </Link>
+                    <div className="favourite-btn">
+                      <Link to="#" className="favourite-icon">
+                        <FiHeart />
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="doc-info-cont">
+                    <h4 className="doc-name">
+                      <Link to="/patient/doctor-profile">Dr.John Doe</Link>
+                      <i className="fas fa-circle-check" />
+                    </h4>
+                    <p className="doc-speciality">MBBS, Dentist</p>
+                    <div className="clinic-details">
+                      <p className="doc-location">
+                        <FiMapPin />
+                        <span>0.9</span> mi - Newyork, USA{" "}
+                        <Link to="#">Get Direction</Link>
+                      </p>
+                      <p className="doc-location">
+                        <FiAward /> <span>20</span> Years of Experience
+                      </p>
+                    </div>
+                    <div className="reviews-ratings">
+                      <p>
+                        <span>
+                          <i className="fas fa-star" /> 4.5
+                        </span>{" "}
+                        (35 Reviews)
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="doc-info-cont">
-                <h4 className="doc-name">
-                  <Link to="/patient/doctor-profile">Dr.John Doe</Link>
-                  <i className="fas fa-circle-check" />
-                </h4>
-                <p className="doc-speciality">MBBS, Dentist</p>
-                <div className="clinic-details">
-                  <p className="doc-location">
-                    <FiMapPin />
-                    <span>0.9</span> mi - Newyork, USA{" "}
-                    <Link to="#">Get Direction</Link>
-                  </p>
-                  <p className="doc-location">
-                    <FiAward /> <span>20</span> Years of Experience
-                  </p>
+
+                <div className="doc-info-right">
+                  <div className="clini-infos">
+                    <ul>
+                      <li>
+                        <FiClock /> &nbsp;
+                        <span className="available-date available-today">
+                          Available Today
+                        </span>
+                      </li>
+                      <li>
+                        <FiThumbsUp /> 98%{" "}
+                        <span className="votes">(252 Votes)</span>
+                      </li>
+                      <li>
+                        <FiDollarSign />
+                        1500 <FiInfo />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="clinic-booking book-appoint">
+                    <Link className="btn btn-primary" to="/patient/booking1">
+                      Book Appointment
+                    </Link>
+                    <Link
+                      className="btn btn-primary-light"
+                      to="/patient/booking2"
+                    >
+                      Book Online Consultation
+                    </Link>
+                  </div>
                 </div>
-                <div className="reviews-ratings">
-                  <p>
-                    <span>
-                      <i className="fas fa-star" /> 4.5
-                    </span>{" "}
-                    (35 Reviews)
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="doc-info-right">
-              <div className="clini-infos">
-                <ul>
-                  <li>
-                    <FiClock /> &nbsp;
-                    <span className="available-date available-today">
-                      Available Today
-                    </span>
-                  </li>
-                  <li>
-                    <FiThumbsUp /> 98%{" "}
-                    <span className="votes">(252 Votes)</span>
-                  </li>
-                  <li>
-                    <FiDollarSign />
-                    1500 <FiInfo />
-                  </li>
-                </ul>
-              </div>
-              <div className="clinic-booking book-appoint">
-                <Link className="btn btn-primary" to="/patient/booking1">
-                  Book Appointment
-                </Link>
-                <Link className="btn btn-primary-light" to="/patient/booking2">
-                  Book Online Consultation
-                </Link>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="card doctor-card">
+        
+   
+     {doctors.map((doctor)=>
+     (
+      
+      <div className="card doctor-card" key={doctor.id} >
         <div className="card-body">
           <div className="doctor-widget-one">
             <div className="doc-info-left">
@@ -179,7 +228,7 @@ const Doctors = () => {
               </div>
               <div className="doc-info-cont">
                 <h4 className="doc-name">
-                  <Link to="/patient/doctor-profile">Dr. Darren Elder</Link>
+                  <Link to="/patient/doctor-profile">{doctor.name}</Link>
                   <i className="fas fa-circle-check" />
                 </h4>
                 <p className="doc-speciality">
@@ -235,6 +284,9 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+     ))}
+
+
       <div className="card doctor-card">
         <div className="card-body">
           <div className="doctor-widget-one">
@@ -244,7 +296,7 @@ const Doctors = () => {
                   <img src={doctor_15} className="img-fluid" alt="" />
                 </Link>
                 <div className="favourite-btn">
-                  <Link to="javascript:void(0)" className="favourite-icon">
+                  <Link to="#" className="favourite-icon">
                     <i className="fas fa-heart" />
                   </Link>
                 </div>
@@ -306,6 +358,7 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+
       <div className="card doctor-card">
         <div className="card-body">
           <div className="doctor-widget-one">
@@ -315,7 +368,7 @@ const Doctors = () => {
                   <img src={doctor_16} className="img-fluid" alt="" />
                 </Link>
                 <div className="favourite-btn">
-                  <Link to="javascript:void(0)" className="favourite-icon">
+                  <Link to="#" className="favourite-icon">
                     <i className="fas fa-heart" />
                   </Link>
                 </div>
@@ -377,6 +430,7 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+
       <div className="card doctor-card">
         <div className="card-body">
           <div className="doctor-widget-one">
@@ -386,7 +440,7 @@ const Doctors = () => {
                   <img src={doctor_17} className="img-fluid" alt="" />
                 </Link>
                 <div className="favourite-btn">
-                  <Link to="javascript:void(0)" className="favourite-icon">
+                  <Link to="#" className="favourite-icon">
                     <i className="fas fa-heart" />
                   </Link>
                 </div>
@@ -448,6 +502,7 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+
       <div className="row">
         <div className="col-sm-12">
           <div className="blog-pagination rev-page">
@@ -488,7 +543,9 @@ const Doctors = () => {
           </div>
         </div>
       </div>
+     
     </div>
+    
   );
 };
 
